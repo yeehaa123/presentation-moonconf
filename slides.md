@@ -4,10 +4,14 @@ offcourse.io
 @yeehaa
 
 ---
+"We shape our buildings; thereafter they shape us." -Winston Churchill
+
+---
 "All that functional stuff, immutability, no side effects... I understand why this makes sense on the backend, but on the frontend..." -A Friend.
 
 ---
 ## Client-Server Model
+
 |Backend              |Frontend           |
 |---------------------|-------------------|
 |Complex              |Simple             |
@@ -17,6 +21,7 @@ offcourse.io
 
 ---
 ## Serverless
+
 |Frontend                  |Backend              |
 |--------------------------|---------------------|
 |Complex                   |Simple               |
@@ -25,7 +30,13 @@ offcourse.io
 |Architecture Matters      |Whatever Works       |
 
 ---
-## Software Architecture
+## Software and Architecture
+
+## Frontend Architecture
+
+---
+## Software and Architecture
+
 ---
 <img class="stretch" data-src="assets/brick-generic.jpg">
 
@@ -63,11 +74,53 @@ offcourse.io
 ---
 <img class="stretch" data-src="assets/prefab.gif">
 
+"More Productive Out Of The Box." -Ember
+
 <!---
-## Prefab Houses & Frontend Frameworks
+## Advantages
 + Quick To Get Started 
 + One Model Fits All
+-->
+
+---
+<img class="stretch" data-src="assets/belgian-house2.jpg">
+
+"Compromise makes a good umbrella, but a poor roof." -James Russell Lowell
+
+<!---
+## Disadvantages
 + Limited Options to Customize
 -->
+
+---
+<img class="stretch" data-src="assets/bricks.jpg">
+
+"Architecture starts when you carefully put two bricks together. There it begins." -Ludwig Mies van der Rohe
+
+---
+## Serverless Architecture
+
+<!---
+misnomer
+-->
+
+---
+
+"AWS Lambda is a compute service where you can upload your code to AWS Lambda and the service can run the code on your behalf using AWS infrastructure." -AWS
+
+<!--
+
+<img class="stretch" data-src="assets/foundation.jpg">
+
++ AWS Lambda
++ Functions As A Service
+-->
+
+
+---
+
+## Conclusion
+
+Engineering is not a science. Science studies particular events to find general laws. Engineering design makes use of the laws to solve particular practical problems. In this it is more closely related to art or craft. –Ove Arup
 
 ---
