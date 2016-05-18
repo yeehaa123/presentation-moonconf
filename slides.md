@@ -5,6 +5,7 @@ offcourse.io
 
 ---
 "We shape our buildings; thereafter they shape us." -Winston Churchill
+=======
 
 ---
 "All that functional stuff, immutability, no side effects... I understand why this makes sense on the backend, but on the frontend..." -A Friend.
@@ -18,6 +19,7 @@ offcourse.io
 |Core Product         |Marketing          |
 |Long Term Investment |Temporary Artifact |
 |Architecture Matters |Whatever Works     |
+<<<<<<< HEAD
 
 ---
 ## Serverless
@@ -122,5 +124,3 @@ misnomer
 ## Conclusion
 
 Engineering is not a science. Science studies particular events to find general laws. Engineering design makes use of the laws to solve particular practical problems. In this it is more closely related to art or craft. –Ove Arup
-
----
