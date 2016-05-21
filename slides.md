@@ -5,7 +5,6 @@ offcourse.io
 
 ---
 "We shape our buildings; thereafter they shape us." -Winston Churchill
-=======
 
 ---
 "All that functional stuff, immutability, no side effects... I understand why this makes sense on the backend, but on the frontend..." -A Friend.
@@ -19,7 +18,6 @@ offcourse.io
 |Core Product         |Marketing          |
 |Long Term Investment |Temporary Artifact |
 |Architecture Matters |Whatever Works     |
-<<<<<<< HEAD
 
 ---
 ## Serverless
@@ -77,7 +75,7 @@ offcourse.io
 <img class="stretch" data-src="assets/prefab.gif">
 
 "More Productive Out Of The Box." -Ember
-
+    
 <!---
 ## Advantages
 + Quick To Get Started 
@@ -107,19 +105,39 @@ misnomer
 -->
 
 ---
+## Offcourse Stack
 
-"AWS Lambda is a compute service where you can upload your code to AWS Lambda and the service can run the code on your behalf using AWS infrastructure." -AWS
++ react (rum - clojurescript)
++ lambda (clojurescript)
++ dynamodb
++ elastic search
 
-<!--
-
-<img class="stretch" data-src="assets/foundation.jpg">
-
-+ AWS Lambda
-+ Functions As A Service
+<!---
+merely bricks not that interesting. Architecture starts when you put these things together
 -->
 
+---
+## Flow
+
+cljs -> lambda -> dynamodb streams -> lambda -> es
+cljs -> lambda -> es
+
+<!--
++ high-level does not look that much different from a  traditional client-server stack, but this is misleading. 
++ Interesting part is that all elements are completely decoupled. 
++ In other words, a serverless architecture forces you to avoid unnecessary dependencies
+-->
 
 ---
+## Frontend
+
++ clojurescript
++ core.async
++ component
++ protocols and multimethods
+
+<!--
+With Offcourse we tried to bring a similar approach to the frontend.
 
 ## Conclusion
 
