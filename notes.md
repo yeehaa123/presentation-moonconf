@@ -15,20 +15,29 @@ Cons:
 + Hidden dependencies
 + Only way is up
 
-+ Service Oriented Architecture
-+ Microkernel Architecture
-+ Microservices Architecture
+### Service Oriented Architecture
+
+### Microkernel Architecture
 
 ### Microservice Architecture
+
+Pros:
++ Loose Coupling
++ Clear Separation of Concerns
+
+Cons:
++ Orchestration
+
+
+# Frontend Architecture
+
+### Microservices Architecture
 
 + Frontend becomes a service amongst many
 + does have another status though
 + more responsibilities
 + i.e. it needs an architecture of its own
 
-# Frontend Architecture
-
-### Microservices Architecture
 
 + Separate service
 + Asynchronous Coupling
