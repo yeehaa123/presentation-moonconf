@@ -134,14 +134,39 @@ When we talk about sofware architecture, we mostly talk about patterns i.e. how 
 ---
 <img class="stretch" data-src="assets/escher.jpg">
 
-"Unfortunately, people using layered architectures can often run into a scenario where they introduce an unnecessary amount of coupling between layers of their application. A high degree of coupling is one factor that can lead to fragile application architectures that are difficult to change or extend."
+"Unfortunately, people using layered architectures can often run into a scenario where they introduce an unnecessary amount of coupling between layers of their application."
 
 —Jean Paul Boodhoo
+
+<!--
+"A high degree of coupling is one factor that can lead to fragile application architectures that are difficult to change or extend."
+
+-->
+
 ---
+<img class="stretch" data-src="assets/oude-kerk-before.jpg">
 
+"The Microkernel architectural pattern applies to software systems that must be able to adapt to changing system requirements."
 
+—Dharmesh Sheta
 
+---
+<img class="stretch" data-src="assets/oude-kerk.jpg">
+
+"It separates a minimal functional core from extended functionality and customer-specific parts. The microkernel also serves as a socket for plugging in these extensions and coordinating their collaboration"
+
+—Dharmesh Sheta
+
+---
+<img class="stretch" data-src="assets/tiny-house.jpg">
+
+"So what does it mean to deliberately choose a sacrificial architecture? Essentially it means accepting now that in a few years time you'll (hopefully) need to throw away what you're currently building."
+
+—Martin Fowler
+
+---
 ## Frontend Architecture
+
 ---
 "All that functional stuff, immutability, no side effects... I understand why this makes sense on the backend, but on the frontend..." 
 
