@@ -6,6 +6,8 @@ offcourse.io
 
 <!---
 Personal introduction and offcourse
+
+“Eiffel saw his Tower in the form of a serious object, rational, useful; men return it to him in the form of a great baroque dream which quite naturally touches on the borders of the irrational ... architecture is always dream and function, expression of a utopia and instrument of a convenience.” 
 -->
 
 ---
