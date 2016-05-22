@@ -1,4 +1,5 @@
-## Architecture, Front-End and a Bit of Front-End Architecture
+## Architecture, Frontend 
+## and a Bit of Frontend Architecture
 Jan Hein Hoogstad   
 offcourse.io   
 @yeehaa
@@ -9,12 +10,29 @@ offcourse.io
 —A Friend.
 
 ---
+## Assumptions
+
+|Backend                |Frontend                     |
+|---------------------  |-----------------------------|
+|Complex                |Simple                       |
+|Core Product           |Marketing                    |
+|Long Term Investment   |Temporary Artifact           |
+|Architectural Patterns |Whatever Works               |
+
+<!---
+
+I'm going to debunk all of these assumptions about frontend architecture
+
+-->
+---
+
 "We shape our buildings; thereafter they shape us." 
 
 —Winston Churchill
 
 ---
 ## Software and Architecture
+## Architecture Patterns
 ## Frontend Architecture
 
 ---
@@ -71,9 +89,106 @@ These building blocks can be:
 <!---
 
 + There is a relation between the building blocks and their use
-+ In this presentation, I want to look at different frontend architectures and the actual buildings that they would correspond to.
++ In this presentation, I will look at different frontend architectures and the actual buildings that they would correspond to.
 
 -->
+
+---
+## Architecture Patterns
+
+---
+<img class="stretch" data-src="assets/mies-van-der-rohe.jpg">
+
+"Architecture starts when you carefully put two bricks together. There it begins." 
+
+—Ludwig Mies van der Rohe
+
+---
+<img class="stretch" data-src="assets/blueprint.jpg">
+
+"In general, a particular system is defined in terms of a collection of components and interactions among those components." 
+
+—Mary Shaw & David Garlan
+
+<!---
+
+When we talk about sofware architecture, we mostly talk about patterns i.e. how do the different components relate to eachother
+
+-->
+
+---
+<img class="stretch" data-src="assets/three-stories.jpg">
+
+"The main principle behind layered architectures is that of 'separation of responsibility'. Each layer is responsible for a finite amount of work."
+
+—Jean Paul Boodhoo
+
+<!---
+Layered Architecture 2
+-->
+
+---
+<img class="stretch" data-src="assets/escher.jpg">
+
+"Unfortunately, people using layered architectures can often run into a scenario where they introduce an unnecessary amount of coupling between layers of their application."
+
+—Jean Paul Boodhoo
+
+<!--
+Layered Architecture 2
+
+"A high degree of coupling is one factor that can lead to fragile application architectures that are difficult to change or extend."
+-->
+
+---
+<img class="stretch" data-src="assets/oude-kerk-before.jpg">
+
+"The Microkernel architectural pattern applies to software systems that must be able to adapt to changing system requirements."
+
+—Dharmesh Sheta
+
+<!--
+Microkernel Architecture 1
+-->
+
+---
+<img class="stretch" data-src="assets/oude-kerk.jpg">
+
+"It separates a minimal functional core from extended functionality and customer-specific parts. The microkernel also serves as a socket for plugging in these extensions and coordinating their collaboration."
+
+—Dharmesh Sheta
+
+<!--
+Microkernel Architecture 2
+-->
+
+---
+<!---
+microservices architecture
+-->
+
+---
+## Frontend Architecture
+
+---
+"All that functional stuff, immutability, no side effects... I understand why this makes sense on the backend, but on the frontend..." 
+
+—A Friend.
+
+---
+## Assumptions
+
+|Backend                |Frontend                     |
+|---------------------  |-----------------------------|
+|Complex                |Simple                       |
+|Core Product           |Marketing                    |
+|Long Term Investment   |Temporary Artifact           |
+|Architectural Patterns |Whatever Works               |
+
+---
+## Frameworks
+## Sacrificial Architecture
+## Serverless Architecture
 
 ---
 <img class="stretch" data-src="assets/prefab.gif">
@@ -101,63 +216,6 @@ These building blocks can be:
 -->
 
 ---
-## Software Architecture
-
----
-
-<img class="stretch" data-src="assets/bricks.jpg">
-
-"Architecture starts when you carefully put two bricks together. There it begins." 
-
-—Ludwig Mies van der Rohe
-
----
-
-<img class="stretch" data-src="assets/blueprint.jpg">
-
-"In general, a particular system is defined in terms of a collection of components and interactions among those components." 
-
-—Mary Shaw & David Garlan
-
-<!---
-
-When we talk about sofware architecture, we mostly talk about patterns i.e. how do the different components relate to eachother
-
--->
-
----
-<img class="stretch" data-src="assets/three-stories.jpg">
-
-"The main principle behind layered architectures is that of “separation of responsibility”. Each layer is responsible for a finite amount of work."
-
-—Jean Paul Boodhoo
----
-<img class="stretch" data-src="assets/escher.jpg">
-
-"Unfortunately, people using layered architectures can often run into a scenario where they introduce an unnecessary amount of coupling between layers of their application."
-
-—Jean Paul Boodhoo
-
-<!--
-"A high degree of coupling is one factor that can lead to fragile application architectures that are difficult to change or extend."
-
--->
-
----
-<img class="stretch" data-src="assets/oude-kerk-before.jpg">
-
-"The Microkernel architectural pattern applies to software systems that must be able to adapt to changing system requirements."
-
-—Dharmesh Sheta
-
----
-<img class="stretch" data-src="assets/oude-kerk.jpg">
-
-"It separates a minimal functional core from extended functionality and customer-specific parts. The microkernel also serves as a socket for plugging in these extensions and coordinating their collaboration"
-
-—Dharmesh Sheta
-
----
 <img class="stretch" data-src="assets/tiny-house.jpg">
 
 "So what does it mean to deliberately choose a sacrificial architecture? Essentially it means accepting now that in a few years time you'll (hopefully) need to throw away what you're currently building."
@@ -165,32 +223,7 @@ When we talk about sofware architecture, we mostly talk about patterns i.e. how 
 —Martin Fowler
 
 ---
-## Frontend Architecture
-
----
-"All that functional stuff, immutability, no side effects... I understand why this makes sense on the backend, but on the frontend..." 
-
-—A Friend.
-
----
-## Layered Architecture
-
-|Backend              |Frontend           |
-|---------------------|-------------------|
-|Complex              |Simple             |
-|Core Product         |Marketing          |
-|Long Term Investment |Temporary Artifact |
-|Architecture Matters |Whatever Works     |
-
----
-## Serverless Architecture 
-
-|Frontend                  |Backend              |
-|--------------------------|---------------------|
-|Complex                   |Simple               |
-|Core Product              |Generic Endpoints    |
-|Long Term Investment      |Temporary Artifact   |
-|Architecture Matters      |Whatever Works       |
+## Serverless Architecture
 
 <!---
 misnomer
