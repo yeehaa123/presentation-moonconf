@@ -4,6 +4,10 @@ Jan Hein Hoogstad
 offcourse.io   
 @yeehaa
 
+<!---
+Personal introduction and offcourse
+-->
+
 ---
 "All that functional stuff, immutability, no side effects... I understand why this makes sense on the backend, but on the frontend..." 
 
