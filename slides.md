@@ -72,7 +72,8 @@ In the first, I will talk about architecture in general, how its use in software
 
 In the second part, I will go through a some important design patterns and show what they look like as actual buildings
 
-The last part, focusses on frontend architecture in particular and why serverless changes everything.
+The last part, focusses on frontend architecture patterns in particular and how serverless changes everything.
+-->
 
 ---
 ## Architecture
@@ -86,14 +87,14 @@ The last part, focusses on frontend architecture in particular and why serverles
 
 <!--- 
 
-+ We programmers mostly talk about architecture in terms of the building blocks that we use, but rarely about the actual artifacts that we produce. 
+Alan Kay famously said that: "Lisp isn’t a language, it’s a building material." To me, this is exemplary of the way developers conceive architecture. We understand architecture in terms of the building blocks that we use, such as:
 
-These building blocks can be:
 + Languages
 + Abstractions
 + Libraries and Frameworks
 + Patterns
 
+The actual artifacts that we produce - i.e. programs as programs - are actually rarely discussed.
 -->
 
 ---
@@ -105,43 +106,51 @@ These building blocks can be:
 
 <!---
 
-+ Actual Architects tend to do the exact opposite.
-+ To them, architecture more about the lived spaces rather than the construction. 
-+ In the case of software development, the lived space would be the actual program
+Actual Architects tend to do the exact opposite. Daniel Libeskind for instance said that: 
 
+
+"Architecture is not based on concrete and steel, and the elements of the soil. It's based on wonder." 
+
+Although a bit too new-agey for me taste. It does clearly illustrate the way architects view their profession. To them, architecture is not about the building blocks that they use, but the lived spaces that emerge from these pieces.
 -->
 
 ---
-<img class="stretch" data-src="assets/unlivable-house.jpg">
+<img class="stretch" data-src="assets/eiffel-tower.jpg">
 
-"A House Is Not A Home" 
+“Eiffel saw his Tower in the form of a serious object, rational, useful; men return it to him in the form of a great baroque dream which quite naturally touches on the borders of the irrational ... architecture is always dream and function, expression of a utopia and instrument of a convenience.” 
 
-—Burt Bacharach & Hal David
-
----
-<img class="stretch" data-src="assets/cozy-house.jpg">
-
-"Some Homes Are Houses" 
-
-—Jan Hein Hoogstad
+—Roland Barthes
 
 <!---
+Of course, philosophers, go even a step further. Roland Barthes, for instance, said that:
 
-+ There is a relation between the building blocks and their use
-+ In this presentation, I will look at different frontend architectures and the actual buildings that they would correspond to.
+“Eiffel saw his Tower in the form of a serious object, rational, useful; men return it to him in the form of a great baroque dream which quite naturally touches on the borders of the irrational ... architecture is always dream and function, expression of a utopia and instrument of a convenience.” 
+
+To Barthes, architecture is also a expression of a future that can be, of could have been. To sum this up: Architecture is three things at the same time:
+
+1. Lived Spaces
+2. An expression of a desired future
+3. But, of course, it's also simply assemblage of building blocks.
 
 -->
-
-
 ---
-## Architecture Patterns
-
----
-<img class="stretch" data-src="assets/mies-van-der-rohe.jpg">
+<img class="stretch" data-src="assets/eiffel-tower.gif">
 
 "Architecture starts when you carefully put two bricks together. There it begins." 
 
 —Ludwig Mies van der Rohe
+
+<!---
+As the famous modernist architect Mies van der Rohe said: "Architecture starts when you carefully put two bricks together. There it begins." 
+
+-->
+
+---
+## Software and Architecture
+
+<!---
+In the next section of this presentation, we will look at different software architectures and actual buildings that they correspond to.
+-->
 
 ---
 <img class="stretch" data-src="assets/blueprint.jpg">
@@ -308,9 +317,29 @@ With Offcourse we tried to bring a similar approach to the frontend.
 ---
 ## Conclusion
 
-Engineering is not a science. Science studies particular events to find general laws. Engineering design makes use of the laws to solve particular practical problems. In this it is more closely related to art or craft. –Ove Arup
+---
+<img class="stretch" data-src="assets/unlivable-house.jpg">
 
+"A House Is Not A Home" 
+
+—Burt Bacharach & Hal David
 
 <!---
-“Eiffel saw his Tower in the form of a serious object, rational, useful; men return it to him in the form of a great baroque dream which quite naturally touches on the borders of the irrational ... architecture is always dream and function, expression of a utopia and instrument of a convenience.” 
+To make this more concrete, no one has said this clearer than the great philosophers Burt Bacharach and Hal David, when they used the voice of Dionne Warwick to claim that: "A House is Not a Home"
+-->
+
+---
+<img class="stretch" data-src="assets/cozy-house.jpg">
+
+"Some Homes Are Houses" 
+
+—Jan Hein Hoogstad
+
+<!---
+On the flip side, however, that some homes are in fact actual houses. Made of bricks, concrete and pipes, etc. In other words, there is a strong relation between building blocks and way they are used.
+-->
+
+<!---
+Engineering is not a science. Science studies particular events to find general laws. Engineering design makes use of the laws to solve particular practical problems. In this it is more closely related to art or craft. –Ove Arup
+
 -->
