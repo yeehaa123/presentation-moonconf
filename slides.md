@@ -7,13 +7,23 @@ offcourse.io
 <!---
 Personal introduction and offcourse
 
-“Eiffel saw his Tower in the form of a serious object, rational, useful; men return it to him in the form of a great baroque dream which quite naturally touches on the borders of the irrational ... architecture is always dream and function, expression of a utopia and instrument of a convenience.” 
--->
+Good morning everyone. Really excited to be here. My name is Jan Hein Hoogstad. I'm currently the CEO and lead developer of a startup called Offcourse. Offcourse is going to radically change the way we learn new skills online, but today, I'm not going to talk about that. 
 
+In fact, for this presentation, my previous life as a professor in philosophy and cultural studies is probably equally relevant as my current one as a developer, since it combines insights from both.
+
+-->
 ---
 "All that functional stuff, immutability, no side effects... I understand why this makes sense on the backend, but on the frontend..." 
 
 —A Friend.
+
+<!---
+The inspiration for this presentation came from a comment that a good friend made when I explained my choice of clojurescript as the language that I used for the offcourse frontend. He said something along the lines of: 
+
+"All that functional stuff, immutability, no side effects... I understand why this makes sense on the backend, but on the frontend..." 
+
+What I found interesting about his remarks was not as much the content, but the assumptions about frontend development that were implied in his words.
+-->
 
 ---
 ## Assumptions
@@ -27,22 +37,45 @@ Personal introduction and offcourse
 
 <!---
 
-I'm going to debunk all of these assumptions about frontend architecture
+The point of this presentation is too debunk all these assumptions about frontend architecture. It consists of two parts.
 
 -->
----
 
+---
+"Serverless" application architectures offer tremendous cost savings and colossal horizontal scaling ability, with the side benefit of encouraging loosely coupled design. The advantages are so profound, that the days of monolithic application servers might be numbered." 
+
+—Obie Fernandez
+
+<!--
+1. The current transition towards so-called serverless architectures, means that the frontend is becoming more and more important. Seriously thinking about frontend architectures is therefore no longer a luxury but a must.
+-->
+
+---
 "We shape our buildings; thereafter they shape us." 
 
 —Winston Churchill
 
----
-## Software and Architecture
-## Architecture Patterns
-## Frontend Architecture
+<!--
+
+2. Not thinking about architecture is a mistake under all circumstances. Here I'm in the company, not only of famous architects but also statesmen like Winston Churchill who claimed that "We shape our buildings; thereafter they shape us."
+-->
 
 ---
+## Architecture
 ## Software and Architecture
+## Frontend Architecture
+
+<!---
+This presentation consists of three parts. 
+
+In the first, I will talk about architecture in general, how its use in software development is significally different from its physical counterpart, and why this matters.
+
+In the second part, I will go through a some important design patterns and show what they look like as actual buildings
+
+The last part, focusses on frontend architecture in particular and why serverless changes everything.
+
+---
+## Architecture
 
 ---
 <img class="stretch" data-src="assets/brick-generic.jpg">
@@ -98,6 +131,7 @@ These building blocks can be:
 + In this presentation, I will look at different frontend architectures and the actual buildings that they would correspond to.
 
 -->
+
 
 ---
 ## Architecture Patterns
@@ -275,3 +309,8 @@ With Offcourse we tried to bring a similar approach to the frontend.
 ## Conclusion
 
 Engineering is not a science. Science studies particular events to find general laws. Engineering design makes use of the laws to solve particular practical problems. In this it is more closely related to art or craft. –Ove Arup
+
+
+<!---
+“Eiffel saw his Tower in the form of a serious object, rational, useful; men return it to him in the form of a great baroque dream which quite naturally touches on the borders of the irrational ... architecture is always dream and function, expression of a utopia and instrument of a convenience.” 
+-->
