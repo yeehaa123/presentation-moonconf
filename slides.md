@@ -200,9 +200,10 @@ The best known, and probably still most commonly used, software architecture pat
 
 "The main principle behind layered architectures is that of 'separation of responsibility'. Each layer is responsible for a finite amount of work."
 
-This is comparable to the dollhouse pictured here. Where each floor has a clearly defined responsibility. The bottom layer is the living room, the middle the parent's bedroom, and the top one is where the baby sleeps.
+This is comparable to classic house layout, as idealized in the dollhouse in the picture. Each floor has a clearly defined responsibility. The bottom layer is the living room, the middle the parent's bedroom, and the top one is where the baby sleeps.
 
-A layered architecture can have many layers, but in its simplest form it consists of a persistence layer with business and presentation layers build on top of it.
+In software development, a layered architecture can have many layers, but in its simplest form it consists of a persistence layer with business and presentation layers build on top of it.
+
 -->
 
 ---
@@ -230,7 +231,11 @@ Which results in fragile applications that are difficult to change or extend.
 —Dharmesh Sheta
 
 <!--
-Microkernel Architecture 1
+
+The microkernel patters aims to correct the flaws of the layered architecture. This "architectural pattern applies to software systems that must be able to adapt to changing system requirements."
+
+The 'Oude Kerk' in Amsterdam actually followed a very similar architectural pattern. First look at its original state...
+
 -->
 
 ---
@@ -241,13 +246,24 @@ Microkernel Architecture 1
 —Dharmesh Sheta
 
 <!--
-Microkernel Architecture 2
+
+And compare that to how it looks now.
+
+This quote about the microkernel pattern equally applies to the architecture of the 'Oude Kerk':
+
+"It separates a minimal functional core from extended functionality and customer-specific parts. The microkernel also serves as a socket for plugging in these extensions and coordinating their collaboration."
+
 -->
 
 ---
+<img class="stretch" data-src="assets/jfk-airport-photo.jpg">
+
 <!---
 microservices architecture
 -->
+
+---
+<img class="stretch" data-src="assets/jfk-airport-plan.png">
 
 ---
 ## Frontend Architecture
