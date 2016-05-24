@@ -6,7 +6,7 @@ offcourse.io
 
 <!---
 
-Good morning everyone. Really excited to be here. My name is Jan Hein Hoogstad. In my previous life, I was a professor in philosophy and cultural studies. But nowadays, I am running a startup called Offcourse. Offcourse is going to radically change the way you learn new skills online, but that's not what I'm going to talk about today. Simply check out our website if you want to know more.
+Good morning everyone. Really excited to be here. I'm Jan Hein Hoogstad. In my previous life, I was a professor in philosophy and cultural studies. But nowadays, I am running a startup called Offcourse. Offcourse is going to radically change the way you learn new skills online, but that's not what I'm going to talk about today. Simply check out our website if you want to know more.
 
 Instead, I will talk about buildings, actual buildings - houses, towers, bridges, etc. And I will talk about what they share with the constructions that we developers are building: programs, applications.
 
@@ -278,14 +278,14 @@ microservices architecture
 
 |Backend                |Frontend                     |
 |---------------------  |-----------------------------|
-|Complex                |Simple                       |
-|Core Product           |Marketing                    |
-|Long Term Investment   |Temporary Artifact           |
-|Architectural Patterns |Whatever Works               |
+|Complex                |Complex                      |
+|Core Product           |Core Product                 |
+|Long Term Investment   |Long Term Investment         |
+|Architectural Patterns |Architectural Patterns       |
 
 ---
+## Ball of Mud Architecture
 ## Frameworks
-## Sacrificial Architecture
 ## Serverless Architecture
 
 ---
@@ -314,13 +314,6 @@ microservices architecture
 -->
 
 ---
-<img class="stretch" data-src="assets/tiny-house.jpg">
-
-"So what does it mean to deliberately choose a sacrificial architecture? Essentially it means accepting now that in a few years time you'll (hopefully) need to throw away what you're currently building."
-
-—Martin Fowler
-
----
 ## Serverless Architecture
 
 <!---
@@ -328,45 +321,14 @@ misnomer
 -->
 
 ---
-## Offcourse Stack
-
-+ react (rum - clojurescript)
-+ lambda (clojurescript)
-+ dynamodb
-+ elastic search
-
-<!---
-merely bricks not that interesting. Architecture starts when you put these things together
--->
-
----
-## Flow
-
-cljs -> lambda -> dynamodb streams -> lambda -> es
-cljs -> lambda -> es
-
-<!--
-+ high-level does not look that much different from a  traditional client-server stack, but this is misleading. 
-+ Interesting part is that all elements are completely decoupled. 
-+ In other words, a serverless architecture forces you to avoid unnecessary dependencies
--->
-
----
-## Frontend
-
-+ clojurescript
-+ core.async
-+ component
-+ protocols and multimethods
-
-<!--
-With Offcourse we tried to bring a similar approach to the frontend.
--->
-
----
 ## Conclusion
 
 ---
+<!---
+Engineering is not a science. Science studies particular events to find general laws. Engineering design makes use of the laws to solve particular practical problems. In this it is more closely related to art or craft. –Ove Arup
+
+-->
+
 <img class="stretch" data-src="assets/unlivable-house.jpg">
 
 "A House Is Not A Home" 
@@ -374,21 +336,6 @@ With Offcourse we tried to bring a similar approach to the frontend.
 —Burt Bacharach & Hal David
 
 <!---
-To make this more concrete, no one has said this clearer than the great philosophers Burt Bacharach and Hal David, when they used the voice of Dionne Warwick to claim that: "A House is Not a Home"
--->
 
----
-<img class="stretch" data-src="assets/cozy-house.jpg">
-
-"Some Homes Are Houses" 
-
-—Jan Hein Hoogstad
-
-<!---
-On the flip side, however, that some homes are in fact actual houses. Made of bricks, concrete and pipes, etc. In other words, there is a strong relation between building blocks and way they are used.
--->
-
-<!---
-Engineering is not a science. Science studies particular events to find general laws. Engineering design makes use of the laws to solve particular practical problems. In this it is more closely related to art or craft. –Ove Arup
-
+No one has summarized this clearer than the great philosophers Burt Bacharach and Hal David, when they used the voice of Dionne Warwick to claim that: "A House is Not a Home"
 -->
