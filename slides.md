@@ -200,8 +200,9 @@ The best known, and probably still most commonly used, software architecture pat
 
 "The main principle behind layered architectures is that of 'separation of responsibility'. Each layer is responsible for a finite amount of work."
 
+This is comparable to the dollhouse pictured here. Where each floor has a clearly defined responsibility. The bottom layer is the living room, the middle the parent's bedroom, and the top one is where the baby sleeps.
 
-
+A layered architecture can have many layers, but in its simplest form it consists of a persistence layer with business and presentation layers build on top of it.
 -->
 
 ---
@@ -212,9 +213,13 @@ The best known, and probably still most commonly used, software architecture pat
 —Jean Paul Boodhoo
 
 <!--
-Layered Architecture 2
 
-"A high degree of coupling is one factor that can lead to fragile application architectures that are difficult to change or extend."
+In practice, however, layered architectures often end up like the Escher print above. This is due to the fact that layered architectures usually end up highly coupled. As described in this quote:
+
+"Unfortunately, people using layered architectures can often run into a scenario where they introduce an unnecessary amount of coupling between layers of their application."
+
+Which results in fragile applications that are difficult to change or extend.
+
 -->
 
 ---
