@@ -5,11 +5,10 @@ offcourse.io
 @yeehaa
 
 <!---
-Personal introduction and offcourse
 
-Good morning everyone. Really excited to be here. My name is Jan Hein Hoogstad. I'm currently the CEO and lead developer of a startup called Offcourse. Offcourse is going to radically change the way you learn new skills online, but today, I'm not going to talk about that. Simply check out our website if you want to know more.
+Good morning everyone. Really excited to be here. My name is Jan Hein Hoogstad. In my previous life, I was a professor in philosophy and cultural studies. But nowadays, I am running a startup called Offcourse. Offcourse is going to radically change the way you learn new skills online, but that's not what I'm going to talk about today. Simply check out our website if you want to know more.
 
-For this presentation, my previous life as a professor in philosophy and cultural studies is probably equally relevant as my current one as a developer, since it combines insights from both.
+Instead, I will talk about buildings, actual buildings - houses, towers, bridges, etc. And I will talk about what they share with the constructions that we developers are building: programs, applications.
 
 -->
 ---
@@ -18,13 +17,14 @@ For this presentation, my previous life as a professor in philosophy and cultura
 —A Friend.
 
 <!---
+
 The inspiration for this presentation came from a comment that a good friend of mine made when I explained my choice of clojurescript as the language that I used for the offcourse frontend. I don't remember his exact words, but he said something along the lines of:  
 
 "All that functional stuff, immutability, no side effects... I understand why this makes sense on the backend, but on the frontend..." 
 
 What I found interesting about his remarks was not as much the content, but the assumptions about frontend development that were implied in his words.
 
-Let me spell them out:
+Let me spell them out for you:
 
 -->
 
@@ -50,7 +50,8 @@ The point of this presentation is too debunk all these assumptions about fronten
 —Obie Fernandez
 
 <!--
-1. The current transition towards so-called serverless architectures, means that the frontend is becoming more and more important. Obie Fernandez, for instance, claims:
+
+The current transition towards so-called serverless architectures means that the frontend is becoming more and more important. Obie Fernandez, for instance, claims:
 
 "Serverless" application architectures offer tremendous cost savings and colossal horizontal scaling ability, with the side benefit of encouraging loosely coupled design. The advantages are so profound, that the days of monolithic application servers might be numbered." 
 
@@ -65,6 +66,7 @@ Following this observation, seriously thinking about frontend architectures is t
 <!--
 
 But the second, even more important reason is, that not thinking about architecture is a mistake under all circumstances. Here I'm in the company, not only of many famous architects but also statesmen like Winston Churchill who claimed that "We shape our buildings; thereafter they shape us."
+
 -->
 
 ---
@@ -73,6 +75,7 @@ But the second, even more important reason is, that not thinking about architect
 ## Frontend Architecture
 
 <!---
+
 This presentation consists of three parts. 
 
 In the first, I will talk about architecture in general, how its use in software development is significally different from its physical counterpart, and why this matters.
@@ -80,6 +83,7 @@ In the first, I will talk about architecture in general, how its use in software
 In the second part, I will go through a some important design patterns and show what they look like as actual buildings
 
 The last part, focusses on frontend architecture patterns in particular and how serverless changes everything.
+
 -->
 
 ---
@@ -101,7 +105,8 @@ Alan Kay famously said that: "Lisp isn’t a language, it’s a building materia
 + Libraries and Frameworks
 + Patterns
 
-The actual artifacts that we produce - i.e. programs as programs - are actually rarely discussed.
+Although code reading groups are becoming more common, the actual artifacts that we produce - namely programs as programs - are still rarely discussed.
+
 -->
 
 ---
@@ -129,17 +134,15 @@ Although a bit too new-agey for me taste. It does clearly illustrate the way arc
 —Roland Barthes
 
 <!---
-Of course, philosophers, go even a step further. Roland Barthes, for instance, said that:
+
+Of course, leave it to the philosophers to go even a step further. Roland Barthes, for instance, said that:
 
 “Eiffel saw his Tower in the form of a serious object, rational, useful; men return it to him in the form of a great baroque dream which quite naturally touches on the borders of the irrational ... architecture is always dream and function, expression of a utopia and instrument of a convenience.” 
 
-To Barthes, architecture is also a expression of a future that can be, of could have been. To sum this up: Architecture is three things at the same time:
-
-1. Lived Spaces
-2. An expression of a desired future
-3. But, of course, it's also simply assemblage of building blocks.
+To Barthes, architecture is also a expression of a future that can be, of could have been. 
 
 -->
+
 ---
 <img class="stretch" data-src="assets/eiffel-tower.gif">
 
@@ -148,7 +151,14 @@ To Barthes, architecture is also a expression of a future that can be, of could 
 —Ludwig Mies van der Rohe
 
 <!---
-As the famous modernist architect Mies van der Rohe said: "Architecture starts when you carefully put two bricks together. There it begins." 
+
+To sum this up: Architecture is three things at the same time:
+
+1. Lived Spaces
+2. An expression of a desired future
+3. But, of course, it's also simply assemblage of building blocks.
+
+Or, as the famous modernist architect Mies van der Rohe said: "Architecture starts when you carefully put two bricks together. There it begins." 
 
 -->
 
@@ -156,7 +166,9 @@ As the famous modernist architect Mies van der Rohe said: "Architecture starts w
 ## Software and Architecture
 
 <!---
-In the next section of this presentation, we will look at different software architectures and actual buildings that they correspond to.
+
+In the next section of this presentation, I will look at different software architecture patterns by comparing them to actual buildings.
+
 -->
 
 ---
@@ -168,7 +180,9 @@ In the next section of this presentation, we will look at different software arc
 
 <!---
 
-When we talk about sofware architecture, we mostly talk about patterns i.e. how do the different components relate to eachother
+When we talk about sofware architecture, we mostly talk about patterns i.e. how do the different components relate to each other. Mary Shaw and David Garlan for instance define software architecture as follows:
+
+"In general, a particular system is defined in terms of a collection of components and interactions among those components." 
 
 -->
 
@@ -180,7 +194,14 @@ When we talk about sofware architecture, we mostly talk about patterns i.e. how 
 —Jean Paul Boodhoo
 
 <!---
-Layered Architecture 2
+
+The best known, and probably still most commonly used, software architecture pattern is the so-called layered architecture. 
+
+
+"The main principle behind layered architectures is that of 'separation of responsibility'. Each layer is responsible for a finite amount of work."
+
+
+
 -->
 
 ---
