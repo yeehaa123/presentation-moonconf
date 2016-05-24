@@ -7,9 +7,9 @@ offcourse.io
 <!---
 Personal introduction and offcourse
 
-Good morning everyone. Really excited to be here. My name is Jan Hein Hoogstad. I'm currently the CEO and lead developer of a startup called Offcourse. Offcourse is going to radically change the way we learn new skills online, but today, I'm not going to talk about that. 
+Good morning everyone. Really excited to be here. My name is Jan Hein Hoogstad. I'm currently the CEO and lead developer of a startup called Offcourse. Offcourse is going to radically change the way you learn new skills online, but today, I'm not going to talk about that. Simply check out our website if you want to know more.
 
-In fact, for this presentation, my previous life as a professor in philosophy and cultural studies is probably equally relevant as my current one as a developer, since it combines insights from both.
+For this presentation, my previous life as a professor in philosophy and cultural studies is probably equally relevant as my current one as a developer, since it combines insights from both.
 
 -->
 ---
@@ -18,11 +18,14 @@ In fact, for this presentation, my previous life as a professor in philosophy an
 —A Friend.
 
 <!---
-The inspiration for this presentation came from a comment that a good friend made when I explained my choice of clojurescript as the language that I used for the offcourse frontend. He said something along the lines of: 
+The inspiration for this presentation came from a comment that a good friend of mine made when I explained my choice of clojurescript as the language that I used for the offcourse frontend. I don't remember his exact words, but he said something along the lines of:  
 
 "All that functional stuff, immutability, no side effects... I understand why this makes sense on the backend, but on the frontend..." 
 
 What I found interesting about his remarks was not as much the content, but the assumptions about frontend development that were implied in his words.
+
+Let me spell them out:
+
 -->
 
 ---
@@ -37,7 +40,7 @@ What I found interesting about his remarks was not as much the content, but the 
 
 <!---
 
-The point of this presentation is too debunk all these assumptions about frontend architecture. It consists of two parts.
+The point of this presentation is too debunk all these assumptions about frontend architecture. It roughly consists of two parts:
 
 -->
 
@@ -47,7 +50,11 @@ The point of this presentation is too debunk all these assumptions about fronten
 —Obie Fernandez
 
 <!--
-1. The current transition towards so-called serverless architectures, means that the frontend is becoming more and more important. Seriously thinking about frontend architectures is therefore no longer a luxury but a must.
+1. The current transition towards so-called serverless architectures, means that the frontend is becoming more and more important. Obie Fernandez, for instance, claims:
+
+"Serverless" application architectures offer tremendous cost savings and colossal horizontal scaling ability, with the side benefit of encouraging loosely coupled design. The advantages are so profound, that the days of monolithic application servers might be numbered." 
+
+Following this observation, seriously thinking about frontend architectures is therefore no longer a luxury but a must.
 -->
 
 ---
@@ -57,7 +64,7 @@ The point of this presentation is too debunk all these assumptions about fronten
 
 <!--
 
-2. Not thinking about architecture is a mistake under all circumstances. Here I'm in the company, not only of famous architects but also statesmen like Winston Churchill who claimed that "We shape our buildings; thereafter they shape us."
+But the second, even more important reason is, that not thinking about architecture is a mistake under all circumstances. Here I'm in the company, not only of many famous architects but also statesmen like Winston Churchill who claimed that "We shape our buildings; thereafter they shape us."
 -->
 
 ---
