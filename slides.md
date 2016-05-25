@@ -266,22 +266,23 @@ No presentation on software architecture nowadays, however, would be complete wi
 
 "... the microservice architectural style is an approach to developing a single application as a suite of small services, each running in its own process and communicating with lightweight mechanisms, often an HTTP resource API."
 
-Just like most modern airports consist of separate terminals that all serve a particular purpose. The microservices architecture loses the concept of a predefined whole.
+Just like most modern airports consist of separate terminals and other building that each serves a particular purpose. The microservices architecture loses the concept of a predefined whole.
+
+In opposition to the microkernel architecture, microservices also do not presuppose a central hub to work properly. Each service functions independently as well as in conjunction with others.
 
 -->
 
 ---
-| Characteristics of Microservices       |
-|----------------------------------------|
-| Componentization via Services          |
-| Organized around Business Capabilities |
-| Smart Endpoints and Dumb Pipes         |
-| Design for Failure                     |
-| Evolutionary Design                    |
+| Characteristics                | Solution                            |
+|--------------------------------|-------------------------------------|
+| Componentization               | Containers / Functions as a Service |
+| Smart Endpoints and Dumb Pipes | Messaging Bus                       |
+| Design for Failure             | Asynchronous Coupling               |
+| Evolutionary Design            | Continuous Deployment Pipeline      |
 
 <!--
 
-In opposition to the microkernel architecture, however, microservices also do not presuppose a central hub to function. Each service functions independently as well as part of a larger whole.
+
 
 -->
 
@@ -291,6 +292,16 @@ In opposition to the microkernel architecture, however, microservices also do no
 "The microservice community favours an alternative approach: smart endpoints and dumb pipes. Applications built from microservices aim to be as decoupled and as cohesive as possible - they own their own domain logic and act more as filters in the classical Unix sense - receiving a request, applying logic as appropriate and producing a response."
 
 —Martin Fowler
+
+<!--
+
+In this list of characteristic, I want to point out the 'Smart Endpoints, Dumb Pipes' in particular. Martin Fowler describes this as follows:
+
+"The microservice community favours an alternative approach: smart endpoints and dumb pipes. Applications built from microservices aim to be as decoupled and as cohesive as possible - they own their own domain logic and act more as filters in the classical Unix sense - receiving a request, applying logic as appropriate and producing a response."
+
+This should be instantly recognizable to any functional programmers. In a microserver architecture. Each service basically works as a - pure or impure - function, with clear inputs and outputs. To me, a microservices architecture and functional programming are therefore a natural fit.
+
+-->
 
 ---
 ## Frontend Architecture
@@ -352,12 +363,13 @@ So what's the first stage to clean up this jquery spaghetti... a framework ofcou
 misnomer
 -->
 ---
-| Serverless Frontend                 | Clojurescript              |
-|-------------------------------------|----------------------------|
-| Componentization via Services       | Component                  |
-| Smart Endpoints and Dumb Pipes      | Core.Async                 |
-| Design for Failure                  | Component + Core.Async     |
-| Evolutionary Design                 | Protocols and Multimethods |
+| Serverless Frontend                 | Clojurescript               |
+|-------------------------------------|-----------------------------|
+| Componentization via Services       | Component                   |
+| Smart Endpoints and Dumb Pipes      | Core.Async                  |
+| Design for Failure                  | Component + Core.Async      |
+| Evolutionary Design                 | Protocols and Multimethods  |
+|                                     | Artifact is plain html / js |
 
 ---
 ## Conclusion
@@ -377,4 +389,18 @@ Engineering is not a science. Science studies particular events to find general 
 <!---
 
 No one has summarized this clearer than the great philosophers Burt Bacharach and Hal David, when they used the voice of Dionne Warwick to claim that: "A House is Not a Home"
+
+And even though I complete agree with them, I would just like to add one thing...
 -->
+
+---
+<img class="stretch" data-src="assets/cozy-house.jpg">
+
+"Every Home Is Also A House"
+
+—Jan Hein Hoogstad
+
+---
+### offcourse.io  
+### @yeehaa  
+github.com/yeehaa123/presentation-moonconf/blob/master/slides.md
