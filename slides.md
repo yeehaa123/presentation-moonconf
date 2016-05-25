@@ -286,6 +286,13 @@ In opposition to the microkernel architecture, however, microservices also do no
 -->
 
 ---
+<img class="stretch" data-src="assets/jfk-subway-map.jpg">
+
+"The microservice community favours an alternative approach: smart endpoints and dumb pipes. Applications built from microservices aim to be as decoupled and as cohesive as possible - they own their own domain logic and act more as filters in the classical Unix sense - receiving a request, applying logic as appropriate and producing a response."
+
+—Martin Fowler
+
+---
 ## Frontend Architecture
 
 ---
@@ -316,6 +323,8 @@ Shantytown aka big ball of mud aka spaghetti code
 
 So what's the first stage to clean up this jquery spaghetti... a framework ofcourse. At first glance, frameworks have a lot of advantages. Like the slogan for the Ember framework states. They make the coder more productive out of the box. They also replace the law of the jungle that characterizes the shantytown architecture with conventions and best practices.
 
+-->
+
 ---
 <img class="stretch" data-src="assets/belgian-house2.jpg">
 
@@ -343,30 +352,22 @@ So what's the first stage to clean up this jquery spaghetti... a framework ofcou
 misnomer
 -->
 ---
-| Characteristics of a Serverless Frontend Architecture |
-|-------------------------------------------------------|
-| Componentization via Services                         |
-| Organized around Business Capabilities                |
-| Smart Endpoints and Dumb Pipes                        |
-| Design for Failure                                    |
-| Evolutionary Design                                   |
-
----
-<img class="stretch" data-src="assets/jfk-subway-map.jpg">
-
-"The microservice community favours an alternative approach: smart endpoints and dumb pipes. Applications built from microservices aim to be as decoupled and as cohesive as possible - they own their own domain logic and act more as filters in the classical Unix sense - receiving a request, applying logic as appropriate and producing a response."
-
-—Martin Fowler
+| Serverless Frontend                 | Clojurescript              |
+|-------------------------------------|----------------------------|
+| Componentization via Services       | Component                  |
+| Smart Endpoints and Dumb Pipes      | Core.Async                 |
+| Design for Failure                  | Component + Core.Async     |
+| Evolutionary Design                 | Protocols and Multimethods |
 
 ---
 ## Conclusion
 
 ---
-<!---
-Engineering is not a science. Science studies particular events to find general laws. Engineering design makes use of the laws to solve particular practical problems. In this it is more closely related to art or craft. –Ove Arup
+Engineering is not a science. Science studies particular events to find general laws. Engineering design makes use of the laws to solve particular practical problems. In this it is more closely related to art or craft.
 
--->
+—Ove Arup
 
+---
 <img class="stretch" data-src="assets/unlivable-house.jpg">
 
 "A House Is Not A Home" 
