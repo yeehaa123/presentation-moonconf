@@ -321,12 +321,20 @@ In direct contrast to the microkernel architecture, microservices also do not ne
 
 <!---
 
-explain
+Although, the microservices patters is not as clearly defined as the others, it does have a couple of common characteristics.
+
+The first is that it distributes the business logic of an application over multiple components. Each of these components has it's own clearly defined domain and is individually deployed. Usually in the form of a Docker Container, or - even more state-of-the-art - an AWS Lambda function.
+
+These services communicate with each other through a message broker - for instance zeromq or rabbitmq. This marks the second characteristic 'smart endpoints dumb pipe'. I will come back to this in a second.
+
+Another very important quality of a microservices architecture is that it is designed for failure. The way to accomplish this is to avoid synchronous coupling between the components as much as possible. Instead, they only communicate via the aforementioned messaging pipeline. This also allows for replica's and backup services in case one of them fails.
+
+Lastly, microservices are characterized by an evolutionary design. They are commonly part of a continuous integration and continuously deployment pipeline. As a result, developers can roll out individual features one at a time, rather than fitting them in periodical release cycles.
 
 -->
 
 ---
-<img class="stretch" data-src="assets/jfk-subway-map.jpg">
+<img class="stretch" data-src="assets/terminal-schema.png">
 
 "The microservice community favours an alternative approach: smart endpoints and dumb pipes. Applications built from microservices aim to be as decoupled and as cohesive as possible - they own their own domain logic and act more as filters in the classical Unix sense - receiving a request, applying logic as appropriate and producing a response."
 
@@ -334,11 +342,11 @@ explain
 
 <!--
 
-Of this list of characteristics, I want to single out the 'Smart Endpoints, Dumb Pipes' in particular. Martin Fowler describes this as follows:
+Of these characteristics, I want to single out the 'Smart Endpoints, Dumb Pipes'. To me, this mark the core of the microservices pattern. Martin Fowler describes this characteristic as follows:
 
 "The microservice community favours an alternative approach: smart endpoints and dumb pipes. Applications built from microservices aim to be as decoupled and as cohesive as possible - they own their own domain logic and act more as filters in the classical Unix sense - receiving a request, applying logic as appropriate and producing a response."
 
-This should be instantly recognizable to any functional programmers. In a microserver architecture. Each service basically works as a - pure or impure - function, with clear inputs and outputs. To me, a microservices architecture and functional programming are therefore a natural fit.
+This flow should be instantly recognizable to any functional programmers. In a microserver architecture. Each service basically works as a - pure or impure - function, with clear inputs and outputs. (unfortunately the airport terminal in the schema is an impure function...) To me, a microservices architecture and functional programming are therefore a natural fit.
 
 -->
 ---
@@ -350,7 +358,7 @@ This should be instantly recognizable to any functional programmers. In a micros
 
 <!---
 
-Most important, though, is the fact that the microservices architecture actually forces the developer to think about her specific domain. As opposed to all other patterns, it's not the domain knowledge that needs to fit the architecture, but vice versa. A properly executed microservices architecture values good design. Or as Ove Arup puts it:
+To me, the appeal of a microservices architecture lies in the fact that it encourage a developer to think about her specific domain. As opposed to all other patterns that I have discussed, this design pattern does not try to force the domain knowledge to fit the architecture, but vice versa. A properly executed microservices architecture values good design. Or as Ove Arup puts it:
 
 "Engineering is not a science. Science studies particular events to find general laws. Engineering design makes use of the laws to solve particular practical problems. In this it is more closely related to art or craft."
 
@@ -366,12 +374,9 @@ Most important, though, is the fact that the microservices architecture actually
 
 <!---
 
-From a well-designed architecture, it's a small step back to my friend's objection.
-
-<!---
+From well-designed architectures, it's only a tiny step back to my friend's objection:
 
 "All that functional stuff, immutability, no side effects... I understand why this makes sense on the backend, but on the frontend..." 
-
 
 By now, I have hopefully convinced you that it's important to think about architecture in general. But I haven't explained why and how this applies to the frontend. 
 
