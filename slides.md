@@ -217,7 +217,7 @@ Which results in fragile applications that are difficult to change or extend.
 
 The microkernel patters aims to correct the flaws of the layered architecture. This "architectural pattern applies to software systems that must be able to adapt to changing system requirements."
 
-The 'Oude Kerk' in Amsterdam actually followed a very similar architectural pattern. First look at its original state...
+The 'Oude Kerk' in Amsterdam actually followed a very similar architectural pattern. First look at its original state around 1306.
 
 -->
 
@@ -230,7 +230,7 @@ The 'Oude Kerk' in Amsterdam actually followed a very similar architectural patt
 
 <!--
 
-And compare that to how it looks now.
+And compare that to how it looks now. <explain>
 
 This quote about the microkernel pattern equally applies to the architecture of the 'Oude Kerk':
 
@@ -371,7 +371,9 @@ While I have nothing against frameworks, I would argue that they little to do wi
 | Evolutionary Design                 | Build Artifact Plain HTML/CSS/JS    |
 
 <!---
-misnomer
+
+misnomer... explain
+
 -->
 
 ---
