@@ -378,9 +378,9 @@ From well-designed architectures, it's only a tiny step back to my friend's obje
 
 "All that functional stuff, immutability, no side effects... I understand why this makes sense on the backend, but on the frontend..." 
 
-By now, I have hopefully convinced you that it's important to think about architecture in general. But I haven't explained why and how this applies to the frontend. 
+By now, I have hopefully convinced you that it's important to think about architecture in general. But I haven't explained why and how this applies to the frontend.
 
-My answer will be a simple one though. A serverless frontend architecture should be shaped after a microservices architecture. Even though the code probably run on the same client, rather than distributed, it's still valuable to conceive the application as if it's a collection of services.
+My answer will be a simple one, though. A serverless frontend architecture should be shaped after a microservices architecture. Even though the code will probably run on a single client, rather than on distributed servers, it's still valuable to conceive the application as if it's a collection of services.
 
 Before I explain the what and how of the serverless frontend architecture that we use at offcourse, I want to discuss some common alternatives.
 
@@ -446,9 +446,19 @@ misnomer... explain
 ## Conclusion
 
 ---
-1. Lived Spaces
-2. Expression of a Desired Future
-3. Assemblage of Building Blocks.
+1. Bricks and Mortar
+2. A Construction 
+3. Lived Space
+
+<!---
+
+In this presentation, I have tried to show that architecture - whether physical or virtual - is always three things at once:
+
+The blocks that they building consists of
+The construction that holds them together
+The set of ideals, practices and expectations that they express.
+
+-->
 
 ---
 <img class="stretch" data-src="assets/unlivable-house.jpg">
@@ -459,22 +469,24 @@ misnomer... explain
 
 <!---
 
-No one has summarized this clearer than the great philosophers Burt Bacharach and Hal David, when they used the voice of Dionne Warwick to claim that: "A House is Not a Home"
+The shortest way to explain that last point to repeat Bacharach and David's quote:  
 
-And even though I completely agree with them, I would just like to add one tiny thing...
+"A House Is Not A Home" 
+
+But even though I completely agree with them, I would just like to add one tiny thing...
 
 -->
 
 ---
 <img class="stretch" data-src="assets/cozy-house.jpg">
 
-"Most Homes Are Also Houses"
+"All Homes Are Also Houses"
 
 —Jan Hein Hoogstad
 
 <!---
 
-Go out and build beautiful buildings.
+Thanks for listening to me. Go out and build beautiful buildings...
 
 ---
 ### offcourse.io  
