@@ -6,9 +6,11 @@ offcourse.io
 
 <!---
 
-Good morning everyone. Really excited to be here. My name is Jan Hein Hoogstad. In my previous life, I was a professor in philosophy and cultural studies. But that's all behind me. Nowadays, I'm running a startup called 'Offcourse'. Offcourse is going to radically change the way you learn new skills online, but that's not what I'm going to talk about in this presentation. Please check out our website if you want to know more.
+Good morning everyone. I am really excited to speak at this conference. My name is Jan Hein Hoogstad. In my previous life, I was a professor in philosophy and cultural studies. But that's all behind me. Nowadays, I'm running a startup called 'Offcourse'. 
 
-Today, I am going to talk about buildings, actual buildings - houses, towers, bridges, etc. And I will discuss what these constructions share with the artifacts that we, developers, are creating: programs, libraries, and applications.
+Offcourse is going to radically change the way you learn new skills online, but that's not what this presentation is about. Please check out our website if you want to know more.
+
+Today, I want to talk about buildings, actual buildings - houses, towers, bridges, etc. And I will discuss what these constructions share with the artifacts that we, developers, are creating: programs, libraries, and applications.
 
 -->
 
@@ -19,11 +21,11 @@ Today, I am going to talk about buildings, actual buildings - houses, towers, br
 
 <!---
 
-The inspiration for this presentation came from a comment that a good friend of mine made when I told him that I had decided to use clojurescript as the language for the offcourse frontend application. While I cannot remember his words verbatim, I know that it was something along the lines of:  
+The inspiration for this presentation came from a comment that a friend of mine made when I told him that I decided to use clojurescript as the language for the offcourse frontend application. While I cannot remember his words verbatim, it was something along the lines of:  
 
 "All that functional stuff, immutability, no side effects... I understand why this makes sense on the backend, but on the frontend..." 
 
-What fascinates me about this remark is not the content, but the assumptions about frontend development that were implied in his words. Let me spell them out for you:
+What fascinates me about this remark is not the content. It's the assumptions about frontend development that are implied in these words. Let me spell them out for you:
 
 -->
 
@@ -47,7 +49,9 @@ Consequently, the frontend is just a temporary artifact while the backend should
 
 And last but not least, that architectural patterns are only important on the  backend, while the frontend developer should simply use whatever works
 
-My own views on frontend development are diametrically opposed to these assumptions. I argue that architecture does matter on the frontend. Today more than ever. My main two reasons are the following:
+My own views on frontend development are diametrically opposed to these assumptions. I believe that architecture does matter tremendously on the frontend. Today more than ever. 
+
+My main two reasons for this are the following:
 
 -->
 
@@ -58,11 +62,13 @@ My own views on frontend development are diametrically opposed to these assumpti
 
 <!---
 
-First, the current transition towards so-called serverless architectures means that the frontend is becoming more and more important. Obie Fernandez, for instance, claims:
+The current transition towards an unfortunately named serverless architectures means that the frontend, client, application is becoming more and more important. 
+
+Obie Fernandez, for instance, claims that:
 
 "Serverless" application architectures offer tremendous cost savings and colossal horizontal scaling ability, with the side benefit of encouraging loosely coupled design. The advantages are so profound, that the days of monolithic application servers might be numbered." 
 
-Without a backend, however, the frontend application ofter becomes the place where all the services are connected. As a consequence, seriously thinking about frontend architectures is no longer a luxury but a must.
+Without a traditional backend, however, the frontend application frequently becomes the place where all the different services come together. As a consequence, seriously thinking about frontend architecture is no longer a luxury but a must.
 
 -->
 
@@ -73,11 +79,11 @@ Without a backend, however, the frontend application ofter becomes the place whe
 
 <!--
 
-Still, the second reason is much more important. I believe, that not thinking about architecture is a mistake under all circumstances. Here I'm in the company of statesmen like Winston Churchill who claimed that:
+Personally, however, I find my second reason much more important. I believe, that not thinking about architecture is a mistake under all circumstances. Here I'm in the company of a statesman like Winston Churchill who claimed that:
 
 "We shape our buildings; thereafter they shape us."
 
-Not thinking about the architecture of our programs means that we are shaped by implicit instead of explicit design choices.
+Not thinking about the architecture of our programs means that we are shaped by implicit rather than explicit design choices.
 
 -->
 
@@ -94,7 +100,7 @@ In the first, I will talk about architecture in general, how its use in software
 
 In the second part, I will go through a some important design patterns and show what they look like as actual buildings
 
-The last part, focusses on frontend architecture patterns in particular and how serverless changes everything.
+The last part, focuses on common frontend architecture patterns and anti-patterns. And how we implemented a serverless architecture in clojurescript at Offcourse.
 
 -->
 
@@ -121,7 +127,7 @@ To me, this is exemplary of the way we, developers, conceive architecture. We un
 + Libraries and Frameworks
 + Patterns
 
-Although code reading groups - such as the classical code reading group - are becoming more common, the actual artifacts that we produce are still rarely discussed. We don't talk about programs like we do about books or our favorite netflix shows. We cannot stop comparing languages, patterns, and libraries, but we forget to look at the product of these building blocks: the program as program. 
+Although code reading groups - such as the classical code reading group - are becoming more common, the actual artifacts that we produce are still rarely discussed. We developers don't talk about programs like we do about books or our favorite netflix shows. We cannot stop comparing languages, patterns, and libraries, but often forget to look at the products of these building blocks: the program as program. 
 
 -->
 
@@ -135,7 +141,6 @@ Although code reading groups - such as the classical code reading group - are be
 <!---
 
 Actual Architects tend to do the exact opposite. Daniel Libeskind for instance said that: 
-
 
 "Architecture is not based on concrete and steel, and the elements of the soil. It's based on wonder." 
 
@@ -181,7 +186,7 @@ Architecture is what Aristotle called an ethos. which literally means 'accustome
 
 <!---
 
-Which his great successors Burt Bacharach and Hal David translated into "A House is Not a Home"
+Aristotle's great successors Burt Bacharach and Hal David translated this into the easy to understand fact: "A House is Not a Home"
 
 -->
 
@@ -246,13 +251,13 @@ In software development, a layered architecture can have many layers, but in its
 
 <!--
 
-In practice, however, layered architectures often end up like this Escher print. This is due to the fact that the clearly defined layers of such a architecture can easily get mixed up.
+In practice, however, layered architectures often end up like this Escher print. This is due to the fact that the theoretically, clearly defined layers of such an architecture can easily get mixed up.
 
 (and yes, I'm looking at you Active Record)
 
 "Unfortunately, people using layered architectures can often run into a scenario where they introduce an unnecessary amount of coupling between layers of their application."
 
-As a result of this tight coupling, layered architecture are often hard to scale or refactor.
+As a result of this tight coupling, layered architectures are often hard to scale, reuse, or refactor.
 
 -->
 
@@ -265,11 +270,11 @@ As a result of this tight coupling, layered architecture are often hard to scale
 
 <!--
 
-The microkernel patters aims to correct the flaws of the layered architecture. This 
+The microkernel patters aims to correct the flaws of the layered architecture.
 
-"architectural pattern applies to software systems that must be able to adapt to changing system requirements."
+"[This] architectural pattern applies to software systems that must be able to adapt to changing system requirements."
 
-The kernel in the name functions as a hub that can be extended by plugins or adapters. While this may not be a common pattern in real-world architecture, it is one of the oldest.
+The kernel in the name refers to a hublike core that can be extended by plugins or adapters. While this may not be a common pattern in real-world architecture, it is one of the oldest.
 
 The 'Oude Kerk' in Amsterdam for instance was build using a very similar design pattern. This is best illustrated visually. First look at its original state around 1306.
 
@@ -284,9 +289,9 @@ The 'Oude Kerk' in Amsterdam for instance was build using a very similar design 
 
 <!--
 
-And compare that to how it looks now. The core chuch is still intact, but is now augmented by many small modules that each extended the original building which custom functionality, such as housing, and - ironically - prostitution.
+And compare that to how it looks now. The core chuch is still intact, but is now augmented by many small modules that each extended the original building with custom functionality, such as housing, catering, and - ironically - prostitution.
 
-This quote about the microkernel pattern therefore equally applies to the architecture of the 'Oude Kerk':
+This quote about the microkernel pattern could equally apply to the architecture of the 'Oude Kerk':
 
 "It separates a minimal functional core from extended functionality and customer-specific parts. The microkernel also serves as a socket for plugging in these extensions and coordinating their collaboration."
 
@@ -301,7 +306,9 @@ This quote about the microkernel pattern therefore equally applies to the archit
 
 <!--
 
-No presentation on software architecture nowadays, however, would be complete without a extension discussion of the current favorite: the microservices pattern. Martin Fowler defines this pattern as follows:
+No presentation on software architecture nowadays, however, would be complete without a extensive discussion of everyone's current favorite: the microservices pattern. 
+
+Martin Fowler defines this pattern as follows:
 
 "... the microservice architectural style is an approach to developing a single application as a suite of small services, each running in its own process and communicating with lightweight mechanisms, often an HTTP resource API."
 
@@ -321,13 +328,13 @@ In direct contrast to the microkernel architecture, microservices also do not ne
 
 <!---
 
-Although, the microservices patters is not as clearly defined as the others, it does have a couple of common characteristics.
+Although, the microservices architectures are not as uniform as the others, they do have a couple of shared characteristics.
 
-The first is that it distributes the business logic of an application over multiple components. Each of these components has it's own clearly defined domain and is individually deployed. Usually in the form of a Docker Container, or - even more state-of-the-art - an AWS Lambda function.
+The first is the business logic of an application is distributed over multiple components. Each of these components has it's own clearly defined domain and gets deployed individually. Usually in the form of a Docker Container, or - even more state-of-the-art - an AWS Lambda function.
 
-These services communicate with each other through a message broker - for instance zeromq or rabbitmq. This marks the second characteristic 'smart endpoints dumb pipe'. I will come back to this in a second.
+The services communicate with each other through a message broker  - for instance zeromq or rabbitmq. This marks the second characteristic: 'smart endpoints and dumb pipes'. I will come back to this in a second.
 
-Another very important quality of a microservices architecture is that it is designed for failure. The way to accomplish this is to avoid synchronous coupling between the components as much as possible. Instead, they only communicate via the aforementioned messaging pipeline. This also allows for replica's and backup services in case one of them fails.
+Another very important quality of microservices architectures is that they are designed for failure. The way to accomplish this is to avoid synchronous coupling between the components as much as possible. Instead, they only communicate via the aforementioned messaging pipeline. This also allows for replica's and backup services in case one of the services fails.
 
 Lastly, microservices are characterized by an evolutionary design. They are commonly part of a continuous integration and continuously deployment pipeline. As a result, developers can roll out individual features one at a time, rather than fitting them in periodical release cycles.
 
@@ -342,11 +349,13 @@ Lastly, microservices are characterized by an evolutionary design. They are comm
 
 <!--
 
-Of these characteristics, I want to single out the 'Smart Endpoints, Dumb Pipes'. To me, this mark the core of the microservices pattern. Martin Fowler describes this characteristic as follows:
+Of these characteristics, I want to single out the 'Smart Endpoints, Dumb Pipes'. To me, this mark the core of the microservices pattern. 
+
+Martin Fowler describes this it as follows:
 
 "The microservice community favours an alternative approach: smart endpoints and dumb pipes. Applications built from microservices aim to be as decoupled and as cohesive as possible - they own their own domain logic and act more as filters in the classical Unix sense - receiving a request, applying logic as appropriate and producing a response."
 
-This flow should be instantly recognizable to any functional programmers. In a microserver architecture. Each service basically works as a - pure or impure - function, with clear inputs and outputs. (unfortunately the airport terminal in the schema is an impure function...) To me, a microservices architecture and functional programming are therefore a natural fit.
+This flow should be instantly recognizable to any functional programmers. In a microserver architecture. Each service basically works as a - pure or impure - function, with clear inputs and outputs. (unfortunately the airport terminal in the schema pictured here is an impure function...) A microservices architecture and functional programming are therefore a natural fit.
 
 -->
 ---
@@ -358,7 +367,9 @@ This flow should be instantly recognizable to any functional programmers. In a m
 
 <!---
 
-To me, the appeal of a microservices architecture lies in the fact that it encourage a developer to think about her specific domain. As opposed to all other patterns that I have discussed, this design pattern does not try to force the domain knowledge to fit the architecture, but vice versa. A properly executed microservices architecture values good design. Or as Ove Arup puts it:
+To me, the appeal of a microservices architecture lies in the fact that it encourages a developer to think about her specific domain. As opposed to all other patterns that I have discussed, this one does not try to force the domain knowledge to fit the architecture, but vice versa. A properly executed microservices architecture values good design. 
+
+Or as architect Ove Arup puts it:
 
 "Engineering is not a science. Science studies particular events to find general laws. Engineering design makes use of the laws to solve particular practical problems. In this it is more closely related to art or craft."
 
@@ -410,7 +421,11 @@ Shantytown aka big ball of mud aka spaghetti code
     
 <!---
 
-So what's the first stage to clean up this shantytown, this big ball of mud, or jquery spaghetti... a framework ofcourse. At first glance, frameworks have a lot of advantages. Like the slogan for the Ember framework states. They make the coder more productive out of the box. They also replace the law of the jungle that characterizes the shantytown architecture with conventions and best practices. In short, frameworks are the software equivalent to prefab houses.
+So what's the first stage to clean up this shantytown, this big ball of mud, or jquery spaghetti... a framework ofcourse. 
+
+At first glance, frontend frameworks have a lot of advantages. Like the slogan for the Ember framework states. They make the coder more productive out of the box. 
+
+Frameworks also replace the law of the jungle that characterizes the shantytown architecture with conventions and best practices. In short, frameworks are the software equivalent to prefab houses.
 
 -->
 
@@ -423,9 +438,13 @@ So what's the first stage to clean up this shantytown, this big ball of mud, or 
 
 <!---
 
-Unfortunately, frameworks also have the same flaws as prefab houses. They function as a 'one size fits all' solution. While this may help you get started in the beginning, they often make it difficult to scale and customize later on.
+Unfortunately, frameworks also have the same flaws as prefab houses. In the words of James Russell Lowell: 
 
-While I have nothing against frameworks, I would argue that they have little to do with architecture. Architecture is about finding specific solutions to specific problems. To make, spaces livable for the individual users. Framework tend to do the opposite.
+"Compromise makes a good umbrella, but a poor roof." 
+
+Frameworks are a 'one size fits all' solution. This may help you quickly get started, but often make it difficult to scale and customize later on.
+
+While I have nothing against frameworks, I would argue that they have little to do with architecture. Architecture is about finding specific solutions to specific problems, To make spaces livable for the individual users. Framework tend to do the opposite.
 
 -->
 ---
