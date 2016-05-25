@@ -282,7 +282,7 @@ In opposition to the microkernel architecture, microservices also do not presupp
 
 <!--
 
-
+explain...
 
 -->
 
@@ -307,9 +307,22 @@ This should be instantly recognizable to any functional programmers. In a micros
 ## Frontend Architecture
 
 ---
-"All that functional stuff, immutability, no side effects... I understand why this makes sense on the backend, but on the frontend..." 
+"All that functional stuff, immutability, one directional data-flow, no side effects... I understand why this makes sense on the backend, but on the frontend..." 
 
 —A Friend.
+
+<!---
+
+From a microservices architecture, it's a small step back to my friend's objectiion.
+
+"All that functional stuff, immutability, one directional data-flow, no side effects... I understand why this makes sense on the backend, but on the frontend..." 
+
+By now, I have hopefully convinced you that it makes to think about architecture in general. But I haven't explained why and how this applies to the frontend. Before I explain the what and how of a serverless architecture, let's first look at the alternatives:
+
+1. Shantytown Architecture
+2. Frameworks
+
+-->
 
 ---
 <img class="stretch" data-src="assets/shantytown.jpg">
@@ -332,7 +345,7 @@ Shantytown aka big ball of mud aka spaghetti code
     
 <!---
 
-So what's the first stage to clean up this jquery spaghetti... a framework ofcourse. At first glance, frameworks have a lot of advantages. Like the slogan for the Ember framework states. They make the coder more productive out of the box. They also replace the law of the jungle that characterizes the shantytown architecture with conventions and best practices. In short, they are the software equivalent to prefab houses.
+So what's the first stage to clean up this jquery spaghetti... a framework ofcourse. At first glance, frameworks have a lot of advantages. Like the slogan for the Ember framework states. They make the coder more productive out of the box. They also replace the law of the jungle that characterizes the shantytown architecture with conventions and best practices. In short, frameworks are the software equivalent to prefab houses.
 
 -->
 
@@ -389,13 +402,14 @@ Engineering is not a science. Science studies particular events to find general 
 
 No one has summarized this clearer than the great philosophers Burt Bacharach and Hal David, when they used the voice of Dionne Warwick to claim that: "A House is Not a Home"
 
-And even though I complete agree with them, I would just like to add one thing...
+And even though I completely agree with them, I would just like to add one tiny thing...
+
 -->
 
 ---
 <img class="stretch" data-src="assets/cozy-house.jpg">
 
-"Every Home Is Also A House"
+"Most Homes Are Also Houses"
 
 —Jan Hein Hoogstad
 
