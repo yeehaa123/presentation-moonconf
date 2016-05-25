@@ -29,8 +29,6 @@ Let me spell them out for you:
 -->
 
 ---
-## Assumptions
-
 |Backend                |Frontend                     |
 |---------------------  |-----------------------------|
 |Complex                |Simple                       |
@@ -256,14 +254,36 @@ This quote about the microkernel pattern equally applies to the architecture of 
 -->
 
 ---
-<img class="stretch" data-src="assets/jfk-airport-photo.jpg">
+<img class="stretch" data-src="assets/jfk-airport-plan.png">
 
-<!---
-microservices architecture
+"In short, the microservice architectural style is an approach to developing a single application as a suite of small services, each running in its own process and communicating with lightweight mechanisms, often an HTTP resource API."
+
+—Martin Fowler
+
+<!--
+
+No presentation on software architecture nowadays, however, would be complete without a discussion of the current favorite: microservices. Martin Fowler defines them as follows:
+
+"... the microservice architectural style is an approach to developing a single application as a suite of small services, each running in its own process and communicating with lightweight mechanisms, often an HTTP resource API."
+
+Just like most modern airports consist of separate terminals that all serve a particular purpose. The microservices architecture loses the concept of a predefined whole.
+
 -->
 
 ---
-<img class="stretch" data-src="assets/jfk-airport-plan.png">
+| Characteristics of Microservices       |
+|----------------------------------------|
+| Componentization via Services          |
+| Organized around Business Capabilities |
+| Smart Endpoints and Dumb Pipes         |
+| Design for Failure                     |
+| Evolutionary Design                    |
+
+<!--
+
+In opposition to the microkernel architecture, however, microservices also do not presuppose a central hub to function. Each service functions independently as well as part of a larger whole.
+
+-->
 
 ---
 ## Frontend Architecture
@@ -274,20 +294,17 @@ microservices architecture
 —A Friend.
 
 ---
-## Assumptions
+<img class="stretch" data-src="assets/shantytown.jpg">
 
-|Backend                |Frontend                     |
-|---------------------  |-----------------------------|
-|Complex                |Complex                      |
-|Core Product           |Core Product                 |
-|Long Term Investment   |Long Term Investment         |
-|Architectural Patterns |Architectural Patterns       |
+"Too many of our software systems are, architecturally, little more than shantytowns. Investment in tools and infrastructure is often inadequate and the tools that are used are primitive. Parts of the system grow unchecked, and the lack of architecture and planning allows problems in one part of the system to erode and pollute adjacent portions. Deadlines loom like monsoons, and architectural elegance seems unattainable."
 
----
-## Ball of Mud Architecture
-## Frameworks
-## Serverless Architecture
+—Brian Foote and Joseph Yoder
 
+<!---
+
+Shantytown aka big ball of mud aka spaghetti code
+
+-->
 ---
 <img class="stretch" data-src="assets/prefab.gif">
 
@@ -296,10 +313,8 @@ microservices architecture
 —Ember
     
 <!---
-## Advantages
-+ Quick To Get Started 
-+ One Model Fits All
--->
+
+So what's the first stage to clean up this jquery spaghetti... a framework ofcourse. At first glance, frameworks have a lot of advantages. Like the slogan for the Ember framework states. They make the coder more productive out of the box. They also replace the law of the jungle that characterizes the shantytown architecture with conventions and best practices.
 
 ---
 <img class="stretch" data-src="assets/belgian-house2.jpg">
@@ -309,16 +324,39 @@ microservices architecture
 —James Russell Lowell
 
 <!---
+
 ## Disadvantages
 + Limited Options to Customize
++ Don't know what happens under the hood.
+
 -->
 
 ---
-## Serverless Architecture
+|Backend                |Frontend                     |
+|---------------------  |-----------------------------|
+|Complex                |Complex                      |
+|Core Product           |Core Product                 |
+|Long Term Investment   |Long Term Investment         |
+|Architectural Patterns |Architectural Patterns       |
 
 <!---
 misnomer
 -->
+---
+| Characteristics of a Serverless Frontend Architecture |
+|-------------------------------------------------------|
+| Componentization via Services                         |
+| Organized around Business Capabilities                |
+| Smart Endpoints and Dumb Pipes                        |
+| Design for Failure                                    |
+| Evolutionary Design                                   |
+
+---
+<img class="stretch" data-src="assets/jfk-subway-map.jpg">
+
+"The microservice community favours an alternative approach: smart endpoints and dumb pipes. Applications built from microservices aim to be as decoupled and as cohesive as possible - they own their own domain logic and act more as filters in the classical Unix sense - receiving a request, applying logic as appropriate and producing a response."
+
+—Martin Fowler
 
 ---
 ## Conclusion
