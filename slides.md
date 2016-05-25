@@ -18,7 +18,7 @@ Instead, I will talk about buildings, actual buildings - houses, towers, bridges
 
 <!---
 
-The inspiration for this presentation came from a comment that a good friend of mine made when I explained my choice of clojurescript as the language that I used for the offcourse frontend. I don't remember his exact words, but he said something along the lines of:  
+The inspiration for this presentation came from a comment that a good friend of mine made when I told him that I was going to use clojurescript as the language for the offcourse frontend. I don't remember his exact words, but he said something along the lines of:  
 
 "All that functional stuff, immutability, no side effects... I understand why this makes sense on the backend, but on the frontend..." 
 
@@ -122,6 +122,7 @@ Actual Architects tend to do the exact opposite. Daniel Libeskind for instance s
 "Architecture is not based on concrete and steel, and the elements of the soil. It's based on wonder." 
 
 Although a bit too new-agey for me taste. It does clearly illustrate the way architects view their profession. To them, architecture is not about the building blocks that they use, but the lived spaces that emerge from these pieces.
+
 -->
 
 ---
@@ -170,21 +171,6 @@ In the next section of this presentation, I will look at different software arch
 -->
 
 ---
-<img class="stretch" data-src="assets/blueprint.jpg">
-
-"In general, a particular system is defined in terms of a collection of components and interactions among those components." 
-
-—Mary Shaw & David Garlan
-
-<!---
-
-When we talk about sofware architecture, we mostly talk about patterns i.e. how do the different components relate to each other. Mary Shaw and David Garlan for instance define software architecture as follows:
-
-"In general, a particular system is defined in terms of a collection of components and interactions among those components." 
-
--->
-
----
 <img class="stretch" data-src="assets/three-stories.jpg">
 
 "The main principle behind layered architectures is that of 'separation of responsibility'. Each layer is responsible for a finite amount of work."
@@ -195,10 +181,9 @@ When we talk about sofware architecture, we mostly talk about patterns i.e. how 
 
 The best known, and probably still most commonly used, software architecture pattern is the so-called layered architecture. 
 
-
 "The main principle behind layered architectures is that of 'separation of responsibility'. Each layer is responsible for a finite amount of work."
 
-This is comparable to classic house layout, as idealized in the dollhouse in the picture. Each floor has a clearly defined responsibility. The bottom layer is the living room, the middle the parent's bedroom, and the top one is where the baby sleeps.
+This is comparable to classic home layout, as idealized in the dollhouse in the picture. Each floor has a clearly defined responsibility. The bottom layer is the living room, the middle the parent's bedroom, and the top one is where the baby sleeps.
 
 In software development, a layered architecture can have many layers, but in its simplest form it consists of a persistence layer with business and presentation layers build on top of it.
 
@@ -280,12 +265,6 @@ In opposition to the microkernel architecture, microservices also do not presupp
 | Design for Failure             | Asynchronous Coupling               |
 | Evolutionary Design            | Continuous Deployment Pipeline      |
 
-<!--
-
-explain...
-
--->
-
 ---
 <img class="stretch" data-src="assets/jfk-subway-map.jpg">
 
@@ -302,6 +281,19 @@ In this list of characteristic, I want to point out the 'Smart Endpoints, Dumb P
 This should be instantly recognizable to any functional programmers. In a microserver architecture. Each service basically works as a - pure or impure - function, with clear inputs and outputs. To me, a microservices architecture and functional programming are therefore a natural fit.
 
 -->
+---
+<img class="stretch" data-src="assets/beautiful-airport.jpg">
+
+"Engineering is not a science. Science studies particular events to find general laws. Engineering design makes use of the laws to solve particular practical problems. In this it is more closely related to art or craft."
+
+—Ove Arup
+
+<!--
+Most important, though, is the fact that the microservices actually forces the developer to think about her specific domain. As opposed to all other patterns, it's not the domain knowledge that needs to fit the architecture, but vice versa. A properly executed microservices architecture values good design. Or as Ove Arup put it:
+
+"Engineering is not a science. Science studies particular events to find general laws. Engineering design makes use of the laws to solve particular practical problems. In this it is more closely related to art or craft."
+
+-->
 
 ---
 ## Frontend Architecture
@@ -313,11 +305,18 @@ This should be instantly recognizable to any functional programmers. In a micros
 
 <!---
 
-From a microservices architecture, it's a small step back to my friend's objectiion.
+From a well-designed architecture, it's a small step back to my friend's objection.
+
+<!---
 
 "All that functional stuff, immutability, one directional data-flow, no side effects... I understand why this makes sense on the backend, but on the frontend..." 
 
-By now, I have hopefully convinced you that it makes to think about architecture in general. But I haven't explained why and how this applies to the frontend. Before I explain the what and how of a serverless architecture, let's first look at the alternatives:
+
+By now, I have hopefully convinced you that it's important to think about architecture in general. But I haven't explained why and how this applies to the frontend. 
+
+My answer will be a simple one though. A serverless frontend architecture should be shaped after a microservices architecture. Even though the code probably on the same client, rather than distributed, it's still valuable the application as if it's a collection of services.
+
+Before I explain the what and how of the serverless frontend architecture that we use at offcourse, I want to discuss some common alternatives.
 
 1. Shantytown Architecture
 2. Frameworks
@@ -345,7 +344,7 @@ Shantytown aka big ball of mud aka spaghetti code
     
 <!---
 
-So what's the first stage to clean up this jquery spaghetti... a framework ofcourse. At first glance, frameworks have a lot of advantages. Like the slogan for the Ember framework states. They make the coder more productive out of the box. They also replace the law of the jungle that characterizes the shantytown architecture with conventions and best practices. In short, frameworks are the software equivalent to prefab houses.
+So what's the first stage to clean up this shantytown, this big ball of mud, or jquery spaghetti... a framework ofcourse. At first glance, frameworks have a lot of advantages. Like the slogan for the Ember framework states. They make the coder more productive out of the box. They also replace the law of the jungle that characterizes the shantytown architecture with conventions and best practices. In short, frameworks are the software equivalent to prefab houses.
 
 -->
 
@@ -363,18 +362,6 @@ Unfortunately, frameworks also have the same flaws as prefab houses. They functi
 While I have nothing against frameworks, I would argue that they little to do with architecture. Architecture is about finding specific solutions to specific problems. To make, spaces livable for the individual users. Framework tend to do the opposite.
 
 -->
-
----
-|Backend                |Frontend                     |
-|---------------------  |-----------------------------|
-|Complex                |Complex                      |
-|Core Product           |Core Product                 |
-|Long Term Investment   |Long Term Investment         |
-|Architectural Patterns |Architectural Patterns       |
-
-<!---
-misnomer
--->
 ---
 | Serverless Frontend                 | Clojurescript                       |
 |-------------------------------------|-------------------------------------|
@@ -383,13 +370,12 @@ misnomer
 | Design for Failure                  | Component + Core.Async              |
 | Evolutionary Design                 | Build Artifact Plain HTML/CSS/JS    |
 
+<!---
+misnomer
+-->
+
 ---
 ## Conclusion
-
----
-Engineering is not a science. Science studies particular events to find general laws. Engineering design makes use of the laws to solve particular practical problems. In this it is more closely related to art or craft.
-
-—Ove Arup
 
 ---
 <img class="stretch" data-src="assets/unlivable-house.jpg">
