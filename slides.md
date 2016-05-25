@@ -332,7 +332,7 @@ Shantytown aka big ball of mud aka spaghetti code
     
 <!---
 
-So what's the first stage to clean up this jquery spaghetti... a framework ofcourse. At first glance, frameworks have a lot of advantages. Like the slogan for the Ember framework states. They make the coder more productive out of the box. They also replace the law of the jungle that characterizes the shantytown architecture with conventions and best practices.
+So what's the first stage to clean up this jquery spaghetti... a framework ofcourse. At first glance, frameworks have a lot of advantages. Like the slogan for the Ember framework states. They make the coder more productive out of the box. They also replace the law of the jungle that characterizes the shantytown architecture with conventions and best practices. In short, they are the software equivalent to prefab houses.
 
 -->
 
@@ -345,9 +345,9 @@ So what's the first stage to clean up this jquery spaghetti... a framework ofcou
 
 <!---
 
-## Disadvantages
-+ Limited Options to Customize
-+ Don't know what happens under the hood.
+Unfortunately, frameworks also have the same flaws as prefab houses. They function as a 'one size fits all' solution. While this may help you get started in the beginning, they often make it difficult to scale and customize later on.
+
+While I have nothing against frameworks, I would argue that they little to do with architecture. Architecture is about finding specific solutions to specific problems. To make, spaces livable for the individual users. Framework tend to do the opposite.
 
 -->
 
@@ -363,13 +363,12 @@ So what's the first stage to clean up this jquery spaghetti... a framework ofcou
 misnomer
 -->
 ---
-| Serverless Frontend                 | Clojurescript               |
-|-------------------------------------|-----------------------------|
-| Componentization via Services       | Component                   |
-| Smart Endpoints and Dumb Pipes      | Core.Async                  |
-| Design for Failure                  | Component + Core.Async      |
-| Evolutionary Design                 | Protocols and Multimethods  |
-|                                     | Artifact is plain html / js |
+| Serverless Frontend                 | Clojurescript                       |
+|-------------------------------------|-------------------------------------|
+| Componentization via Services       | Component                           |
+| Smart Endpoints and Dumb Pipes      | Core.Async                          |
+| Design for Failure                  | Component + Core.Async              |
+| Evolutionary Design                 | Build Artifact Plain HTML/CSS/JS    |
 
 ---
 ## Conclusion
