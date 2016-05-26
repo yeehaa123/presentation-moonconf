@@ -403,29 +403,32 @@ Before I explain the what and how of the serverless frontend architecture that w
 ---
 <img class="stretch" data-src="assets/shantytown.jpg">
 
+---
 "Too many of our software systems are, architecturally, little more than shantytowns. Investment in tools and infrastructure is often inadequate and the tools that are used are primitive. Parts of the system grow unchecked, and the lack of architecture and planning allows problems in one part of the system to erode and pollute adjacent portions. Deadlines loom like monsoons, and architectural elegance seems unattainable."
 
 —Brian Foote and Joseph Yoder
 
 <!---
 
-Shantytown aka big ball of mud aka spaghetti code
+Unfortunately, the lack of any deliberate architecture is still prominent on the frontend. This anti-pattern has many names: shantytown, big ball of mud, but on the frontend it is best known as jQuery Spaghetti. Brian Foote and Joseph Yoder vividly describe the dangers of such an approach:
+
+"Too many of our software systems are, architecturally, little more than shantytowns. Investment in tools and infrastructure is often inadequate and the tools that are used are primitive. Parts of the system grow unchecked, and the lack of architecture and planning allows problems in one part of the system to erode and pollute adjacent portions. Deadlines loom like monsoons, and architectural elegance seems unattainable."
 
 -->
 ---
 <img class="stretch" data-src="assets/prefab.gif">
 
-"More Productive Out Of The Box." 
+"Why don't you use a framework instead?"
 
-—Ember
+—Same Friend
     
 <!---
 
-So what's the first stage to clean up this shantytown, this big ball of mud, or jquery spaghetti... a framework ofcourse. 
+So how do we clean up this shantytown, this big ball of mud, this jquery spaghetti... My friend had the solution:
 
-At first glance, frontend frameworks have a lot of advantages. Like the slogan for the Ember framework states. They make the coder more productive out of the box. 
+"Why don't you use a framework instead?"
 
-Frameworks also replace the law of the jungle that characterizes the shantytown architecture with conventions and best practices. In short, frameworks are the software equivalent to prefab houses.
+At first glance, frontend frameworks have a lot of advantages. Like the slogan for the Ember framework states. They make the coder more productive out of the box. Furthermore, frameworks also replace the law of the jungle that characterizes the shantytown architecture with conventions and best practices. In short, frameworks are the software equivalent to prefab houses.
 
 -->
 
@@ -438,26 +441,34 @@ Frameworks also replace the law of the jungle that characterizes the shantytown 
 
 <!---
 
-Unfortunately, frameworks also have the same flaws as prefab houses. In the words of James Russell Lowell: 
+Unfortunately, frameworks also suffer from the same flaws as prefab houses. In the words of James Russell Lowell: 
 
 "Compromise makes a good umbrella, but a poor roof." 
 
-Frameworks are a 'one size fits all' solution. This may help you quickly get started, but often make it difficult to scale and customize later on.
+Frameworks are a 'one size fits all' solution. They may help you to get started quickly, but often make it difficult to scale and customize later on.
 
-While I have nothing against frameworks, I would argue that they have little to do with architecture. Architecture is about finding specific solutions to specific problems, To make spaces livable for the individual users. Framework tend to do the opposite.
+(and yes, I'm looking at you Angular)
+
+While I have nothing against frameworks - like I said, some of my best friends use them - I would argue that they have little to do with architecture. Architecture is about finding specific solutions to specific problems, To make spaces livable for the individual users. Framework tend to do the opposite.
 
 -->
 ---
 | Serverless Frontend                 | Clojurescript                       |
 |-------------------------------------|-------------------------------------|
 | Componentization                    | Component                           |
-| Smart Endpoints and Dumb Pipes      | Core.Async                          |
-| Design for Failure                  | Component + Core.Async              |
+| Smart Endpoints and Dumb Pipes      | Core.Async Channels                 |
+| Design for Failure                  | Core.Async Go Blocks                |
 | Evolutionary Design                 | Build Artifact Plain HTML/CSS/JS    |
 
 <!---
 
-misnomer... explain
+So with Offcourse, I chose to go a different route and design a custom serverless frontend, based around the same principles as a microservices architecture. Clojurescript proved to be a fitting choice, because it provided me with the right set of primitives to implement the characteristics, not to mimic the implementation.
+
+In our architecture, we use Stuart Sierra's creatively named 'Component' library to implement the services: common frontend services like a router, a datastore, and a view renderer all function independently of each other.
+
+Core.Async's channels are clojurescript's alternative to a message broker, while the go-block in the same library help us to prevent synchronous coupling between the different components.
+
+Last but not least, the fact that clojurescript's build artifacts are simple javascript files, makes our deployment pipeline extremely simple. We just build, test and sync static websites.
 
 -->
 
@@ -466,16 +477,18 @@ misnomer... explain
 
 ---
 1. Bricks and Mortar
-2. A Construction 
+2. Assemblage 
 3. Lived Space
 
 <!---
 
-In this presentation, I have tried to show that architecture - whether physical or virtual - is always three things at once:
+To wrap things up. In this presentation, I have tried to show that an architecture - whether physical or virtual - are three perspectives on the same thing. It is:
 
-The blocks that they building consists of
-The construction that holds them together
-The set of ideals, practices and expectations that they express.
+the blocks that the building consists of
+
+the construction that holds them together,
+
+as well as the set of ideals, practices and expectations that they express.
 
 -->
 
@@ -488,11 +501,11 @@ The set of ideals, practices and expectations that they express.
 
 <!---
 
-The shortest way to explain that last point to repeat Bacharach and David's quote:  
+In short:
 
 "A House Is Not A Home" 
 
-But even though I completely agree with them, I would just like to add one tiny thing...
+But even though I completely agree with Bacharach and David, I would just like to add one tiny thing...
 
 -->
 
