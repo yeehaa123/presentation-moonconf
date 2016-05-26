@@ -6,11 +6,11 @@ offcourse.io
 
 <!---
 
-Good morning everyone. I am really excited to speak at this conference. My name is Jan Hein Hoogstad. In my previous life, I was a professor in philosophy and cultural studies. But that's all behind me. Nowadays, I'm running a startup called 'Offcourse'. 
+Good morning everyone. Very excited to speak at this conference. My name is Jan Hein Hoogstad. In my previous life, I was a professor in philosophy and cultural studies. But that's all behind me. Nowadays, I'm running a startup called 'Offcourse'. 
 
 Offcourse is going to radically change the way you learn new skills online, but that's not what this presentation is about. Please check out our website if you want to know more.
 
-Today, I want to talk about buildings, actual buildings - houses, towers, bridges, etc. And I will discuss what these constructions share with the artifacts that we, developers, are creating: programs, libraries, and applications.
+Today, I want to talk about buildings, actual buildings - houses, towers, bridges, etc. And I will discuss what these constructions share with the artifacts that we, developers, are creating: programs, libraries, and applications. They are all the product of architecture.
 
 -->
 
@@ -21,11 +21,11 @@ Today, I want to talk about buildings, actual buildings - houses, towers, bridge
 
 <!---
 
-The inspiration for this presentation came from a comment that a friend of mine made when I told him that I decided to use clojurescript as the language for the offcourse frontend application. While I cannot remember his words verbatim, it was something along the lines of:  
+The inspiration for this presentation comes from a comment that a friend of mine made when I told him that I decided to use clojurescript as the language for the offcourse frontend application. While I cannot remember his words verbatim, it was something along the lines of:  
 
 "All that functional stuff, immutability, no side effects... I understand why this makes sense on the backend, but on the frontend..." 
 
-What fascinates me about this remark is not the content. It's the assumptions about frontend development that are implied in these words. Let me spell them out for you:
+What fascinates me about his remark is not the content. It's the assumptions about frontend development that are implied in his words. Let me spell them out for you:
 
 -->
 
@@ -49,9 +49,11 @@ Consequently, the frontend is just a temporary artifact while the backend should
 
 And last but not least, that architectural patterns are only important on the  backend, while the frontend developer should simply use whatever works
 
-My own views on frontend development are diametrically opposed to these assumptions. I believe that architecture does matter tremendously on the frontend. Today more than ever. 
+In my experience, his views are quite representative of the developer community at large.
 
-My main two reasons for this are the following:
+My own views on frontend development, however, are diametrically opposed to these assumptions. I believe that architecture does matter tremendously on the frontend. Today more than ever. 
+
+Before I go into detail, I want to briefly mention two reasons to support my views:
 
 -->
 
@@ -68,7 +70,7 @@ Obie Fernandez, for instance, claims that:
 
 "Serverless" application architectures offer tremendous cost savings and colossal horizontal scaling ability, with the side benefit of encouraging loosely coupled design. The advantages are so profound, that the days of monolithic application servers might be numbered." 
 
-Without a traditional backend, however, the frontend application frequently becomes the place where all the different services come together. As a consequence, seriously thinking about frontend architecture is no longer a luxury but a must.
+Without a traditional backend, however, the frontend application frequently becomes the place where all the different services come together. As a consequence, seriously thinking about frontend architecture is no longer a luxury. It has become an absolute must.
 
 -->
 
@@ -79,7 +81,7 @@ Without a traditional backend, however, the frontend application frequently beco
 
 <!--
 
-Personally, however, I find my second reason much more important. I believe, that not thinking about architecture is a mistake under all circumstances. Here I'm in the company of a statesman like Winston Churchill who claimed that:
+Personally, however, I find another reason much more important. I believe, that not thinking about architecture is a mistake under all circumstances. Here I'm in the company of a statesman like Winston Churchill who claimed that:
 
 "We shape our buildings; thereafter they shape us."
 
@@ -94,7 +96,7 @@ Not thinking about the architecture of our programs means that we are shaped by 
 
 <!---
 
-This presentation consists of three parts. 
+This presentation consists of three parts:
 
 In the first, I will talk about architecture in general, how its use in software development is significally different from its physical counterpart, and why this matters.
 
