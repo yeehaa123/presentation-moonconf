@@ -163,17 +163,7 @@ Leave it to the philosophers to go even a step further. Roland Barthes, for inst
 
 To put this simply, architecture is always a expression of a future that can be, of could have been. It's the materialization of common ideals. 
 
--->
-
----
-"Ethos"
-
-—Aristotle
-
-
-<!-- 
-
-Architecture is what Aristotle called an ethos. which literally means 'accustomed space'
+Architecture is what Aristotle called an ethos. which literally means 'accustomed' or 'lived space'.
 
 -->
 
@@ -186,7 +176,7 @@ Architecture is what Aristotle called an ethos. which literally means 'accustome
 
 <!---
 
-Aristotle's great successors Burt Bacharach and Hal David translated this into the easy to understand fact: "A House is Not a Home"
+Aristotle's great successors Burt Bacharach and Hal David translated this ancient word into an easy to understand fact: "A House is Not a Home"
 
 -->
 
@@ -219,7 +209,7 @@ But, architecture is also a simple collection of building blocks. Or, as the fam
 
 <!---
 
-In the next section of this presentation, I will look at different software architecture patterns by comparing them to actual buildings.
+In the following section of this presentation, I will look at different software architecture patterns by comparing them to actual buildings.
 
 -->
 
@@ -270,13 +260,13 @@ As a result of this tight coupling, layered architectures are often hard to scal
 
 <!--
 
-The microkernel patters aims to correct the flaws of the layered architecture.
+The microkernel or plugin pattern aims to correct the flaws of the layered architecture.
 
 "[This] architectural pattern applies to software systems that must be able to adapt to changing system requirements."
 
 The kernel in the name refers to a hub-like core that can be extended by plugins or adapters. While this may not be a common pattern in real-world architecture, it is one of the oldest.
 
-The 'Oude Kerk' in Amsterdam for instance was built using a very similar design pattern. This is best illustrated visually. First look at the church's original state around 1306.
+The 'Oude Kerk' in Amsterdam for instance was built using a very similar design pattern. This is best illustrated visually. First look at the church's original state around 1306...
 
 -->
 
@@ -289,7 +279,7 @@ The 'Oude Kerk' in Amsterdam for instance was built using a very similar design 
 
 <!--
 
-And compare that to how it looks today. The core chuch of 1306 is still intact, but is hardly recognizable. Over time, it has been augmented by many small modules that each extend the original building with custom functionality, such as housing, catering, and - ironically - prostitution.
+... and compare that to how it looks today. The core chuch of 1306 is still intact, but is hardly recognizable. Over time, it has been augmented by many small modules that each extend the original building with custom functionality, such as housing, catering, and - ironically - prostitution.
 
 This quote about the microkernel pattern could equally apply to the architecture of the 'Oude Kerk':
 
@@ -349,7 +339,7 @@ Lastly, microservices are characterized by an evolutionary design. They are comm
 
 <!--
 
-Before I move on to the frontend, I want to focus on the 'Smart Endpoints, Dumb Pipes'. To me, this mark the core of the microservices pattern. 
+Before I move on to the frontend, I want to focus on the 'Smart Endpoints, Dumb Pipes'. In my opinion, this constitutes the heart of the microservices pattern. 
 
 Martin Fowler describes this it as follows:
 
@@ -367,11 +357,11 @@ This flow should be instantly recognizable to any functional programmers. In a m
 
 <!---
 
-To me, the appeal of a microservices architecture lies in the fact that it encourages a developer to think about her specific domain. As opposed to all other patterns that I have discussed, this one does not try to force the domain knowledge to fit the architecture, but vice versa. A properly executed microservices architecture values good design. 
+To me, the appeal of a microservices architecture lies in the fact that it encourages a developer to think about her specific domain. As opposed to all other patterns that I have discussed so far, this one does not try to force the domain knowledge to fit the architecture. The domain that informs the design, but does not enforce it.
 
 Or as the architect Ove Arup puts it:
 
-"Engineering is not a science. Science studies particular events to find general laws. Engineering design makes use of the laws to solve particular practical problems. In this it is more closely related to art or craft."
+"Engineering is not a science. Science studies particular events to find general laws. Engineering design makes use of these laws to solve particular practical problems. In this it is more closely related to art or craft."
 
 -->
 
@@ -385,13 +375,13 @@ Or as the architect Ove Arup puts it:
 
 <!---
 
-From well-designed architectures, it's only a tiny step back to my friend's initial objection:
+From beautiful architecture, it's only a tiny step back to my friend's initial objection:
 
 "All that functional stuff, immutability, no side effects... I understand why this makes sense on the backend, but on the frontend..." 
 
 By now, I have hopefully convinced you that it's important to think about architecture in general. But I haven't explained why and how this applies to the frontend.
 
-My answer will be a simple one. Serverless frontends should be shaped after a microservices architecture. Even though the code will probably run on a single client, rather than on distributed servers, I still consider it valuable to design the application as if it's a collection of services.
+My answer will be a simple one. The microservices architecture is a good way to use for the a serverless frontend application. Even though the code will run on a single client, rather than on distributed servers, I still consider it valuable to design the application as if it's a collection of services.
 
 Before I explain the what and how of the serverless frontend architecture that we use at offcourse, I want to discuss some common alternatives.
 
@@ -410,7 +400,9 @@ Before I explain the what and how of the serverless frontend architecture that w
 
 <!---
 
-Unfortunately, the lack of any deliberate architecture is still prominent on the frontend. This anti-pattern has many names: shantytown, big ball of mud, but on the frontend it is best known as jquery Spaghetti. Brian Foote and Joseph Yoder vividly describe the dangers of such an approach:
+Unfortunately, the lack of any deliberate architecture is still prominent on the frontend. This anti-pattern has many names: shantytown, big ball of mud, but in frontend development, it is best known as jquery Spaghetti. 
+
+Brian Foote and Joseph Yoder vividly describe the dangers of such an approach:
 
 "Too many of our software systems are, architecturally, little more than shantytowns. Investment in tools and infrastructure is often inadequate and the tools that are used are primitive. Parts of the system grow unchecked, and the lack of architecture and planning allows problems in one part of the system to erode and pollute adjacent portions. Deadlines loom like monsoons, and architectural elegance seems unattainable."
 
@@ -449,11 +441,11 @@ Frameworks are a 'one size fits all' solution. They may help you to get started 
 
 (and yes, I'm looking at you Angular)
 
-While I have nothing against frameworks - like I said, some of my best friends use them - I would argue that they have little to do with architecture. Architecture is the art of about designing specific solutions for specific problems, To make spaces livable for the individual users. Framework tend to do the opposite.
+While I have nothing against frameworks - like I said, some of my best friends use them - I would argue that they have little to do with architecture. Architecture is the art of designing tailormade solutions to specific problems, To make spaces livable for the individual users. Framework tend to do the opposite.
 
 -->
 ---
-| Serverless Frontend                 | Clojurescript                       |
+| Characteristics                     | Solution                            |
 |-------------------------------------|-------------------------------------|
 | Componentization                    | Component                           |
 | Smart Endpoints and Dumb Pipes      | Core.Async Channels                 |
@@ -462,11 +454,11 @@ While I have nothing against frameworks - like I said, some of my best friends u
 
 <!---
 
-So with Offcourse, I chose to go a different route and designed a custom serverless frontend. This design based around the same principles as a microservices architecture. Clojurescript proved to be a fitting choice, because it provided me with the right set of primitives to implement the characteristics of this pattern, not to mimic the backend implementation on the frontend.
+So with Offcourse, I chose to go a different route. Through trial and error, I  designed a custom serverless frontend. This design is based around the same principles as a microservices architecture. Clojurescript proved to be a fitting choice, because it provided me with the right set of primitives to implement the characteristics of this pattern, which is not the same as mimicking the backend implementation on the frontend.
 
-In our architecture, we use Stuart Sierra's creatively named 'Component' library to implement the services: common frontend services like a router, a datastore, and a view renderer that all function independently of each other.
+In our application, we use Stuart Sierra's creatively named 'Component' library to implement the services: common frontend services like a router, a datastore, and a view renderer that all function independently of each other.
 
-Core.Async's channels are clojurescript's alternative to a message broker, while the go-block in the same library help us to prevent synchronous coupling between the different components.
+Core.Async's channels are clojurescript's alternative to a message broker, while the go-block of the same library help us to prevent synchronous coupling between the different components.
 
 Last but not least, the fact that clojurescript's build artifacts are simple javascript files, makes our deployment pipeline extremely simple. We just build, test and sync static websites.
 
