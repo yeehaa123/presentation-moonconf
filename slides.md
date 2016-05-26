@@ -10,7 +10,7 @@ Good morning everyone. Very excited to speak to you today. My name is Jan Hein H
 
 Offcourse is going to radically change the way you learn new skills online, but that's not what this presentation is about. Please check out our website if you want to know more.
 
-Today, I want to talk about buildings, actual buildings - houses, towers, bridges, etc. I will focus on what these constructions share with the artifacts that we, developers, build: programs, libraries, and applications: Architecture.
+Today, I want to talk about buildings, actual buildings - houses, towers, bridges, etc. I will focus on the thing that these constructions share with the artifacts that we, developers, build: programs, libraries, and applications. That common element is architecture.
 
 -->
 
@@ -21,7 +21,7 @@ Today, I want to talk about buildings, actual buildings - houses, towers, bridge
 
 <!---
 
-The inspiration for this presentation comes from a comment that a good friend of mine made when I told him that I decided to use Clojurescript as the language for the offcourse frontend application. While I cannot remember his exact words verbatim, it was something along the lines of:  
+The inspiration for this presentation comes from a comment that a good friend of mine made when I told him that I decided to use Clojurescript as the language for the offcourse frontend application. While I cannot remember his words verbatim, it was something along the lines of:  
 
 "All that functional stuff, immutability, no side effects... I understand why this makes sense on the backend, but on the frontend..." 
 
